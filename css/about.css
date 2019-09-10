@@ -1,0 +1,385 @@
+body {
+	--date-border-color: #3b7dbf;
+	--news-bg-color: #eaebec;
+	--news-text-color: #6a6f73;
+	--course-icon-color: #3b7dbf;
+}
+
+section {
+	padding: 4em 0;
+}
+
+section .section-wrapper {
+	max-width: 1300px;
+	/* min-height: calc(600px - 8em); */
+}
+
+section.right {
+	/* text-align: right; */
+}
+
+section .text{
+	width: 520px;
+	margin-right: 7em;
+}
+
+section.right .text{
+	margin-right: 3em;
+	margin-left: 4em;
+}
+
+
+section .text h3 {
+	font-family: sans-serif !important;
+	font-size: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 0.4em;
+	letter-spacing: 0.3px;
+	color: var(--main-color)
+}
+
+section h2 {
+	font-family: Light, sans-serif !important;
+	font-size: 2em;
+	line-height: 1.4em;
+	margin-bottom: 0.4em;
+}
+
+section p {
+	font-family: Lato, sans-serif;
+	font-size: 1.05em;
+	line-height: 1.8em;
+	color: #666;
+	/* text-align: justify; */
+}
+
+section p a{
+	color: var(--main-color)
+}
+
+#sectionAbout{
+	border-bottom: 1px solid #ddd;
+}
+
+#aboutBoxes .box:first-child {
+	margin-bottom: 1.4em;
+}
+
+.box {
+	min-height: 170px;
+	position: relative;
+	background: #f0f0f3;
+	overflow: hidden;
+	padding: 1.6em;
+	position: relative;
+	/* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); */
+}
+
+.box h4 {
+	/* border-bottom: 1px solid #ecb944; */
+	float: left;
+	margin-right: 0.4em;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 0.5px;
+	line-height: 1.9em;
+	color: #3c3c98;
+}
+
+.box h4 span{
+	display: inline-block;
+	transform: translateY(-1px)
+}
+
+.box svg {
+	position: absolute;
+	top: -50px;
+	right: -30px;
+	width: 160px;
+	height: 160px;
+	fill: var(--main-color);
+	opacity: 0.04;
+}
+
+#aboutBoxes .box:first-child svg {
+	transform: rotate(180deg);
+}
+
+.box p,
+.box li {
+	padding-right: 70px;
+	font-family: Light, sans-serif;
+	font-size: 1.05em;
+	line-height: 1.8em;
+	color: #000;
+}
+
+.box ul {
+	padding-left: 20px;
+}
+
+.box li {
+	/* list-style-type: circle; */
+	font-family: Lato, sans-serif;
+	font-size: 1.05em;
+	line-height: 1.5em;
+	margin-bottom: 0.5em;
+	position: relative;
+	width: 50%;
+	margin-bottom: 1em;;
+	padding-right: 2.5em;
+}
+
+.box li span{
+	display: block;
+	font-size: 0.88em;
+	line-height: 2em;
+	color: #6a6f73;
+}
+
+.box li:before {
+	content: '';
+	position: absolute;
+	left: -20px;
+	top: 10px;
+	margin: auto;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	border: 1px solid #9b9bc1;
+	border-color: #908a7e;
+}
+
+#topManagement{
+	padding: 8em 0;
+}
+
+#topManagement #people{
+	padding: 0;
+	max-width: 1000px;
+	margin-right: -4.5em;
+	background-color: #3b3a71;
+	overflow: hidden;
+	border-radius: 3px;
+	box-shadow: 3px 3px 200px rgba(59, 58, 113, 0.82);
+}
+
+#people:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: 200px;
+	background-image: url(../img/ptn.png);
+	z-index: 1;
+	pointer-events: none;
+	opacity: 0.055;
+	filter: invert(100%);
+}
+
+#navigator{
+	color: #e1e0f7;
+	padding: 0.7em 1.5em;
+	background: #2f2e5d;
+	/* border-bottom: 1px solid #545392; */
+}
+
+#navigator a{
+	font-size: 0.85em;
+	padding: 0.5em 0.7em;
+	letter-spacing: 0.03em;
+	margin-right: 1.5em;
+}
+
+#navigator a.active{
+	background: rgb(34, 33, 64);
+}
+
+#topManagement h4 {
+	text-transform: uppercase;
+	font-size: 1.8em;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 1.6em;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: #3c3c98;
+}
+
+#topManagement .text h3{
+	margin-top: 2em;
+}
+
+#staffList{
+	position: relative;
+	height: 528px;
+	overflow: hidden;
+}
+
+#staffList #pagers{
+	position: absolute;
+	bottom: -6px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: rgba(59, 58, 113, 0.72);
+	padding: 0.5em;
+	width: 60px;
+	z-index: 10;
+}
+
+.pager{
+	cursor: pointer;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	border: 2px solid #626190;
+	transition: all 0.25s ease-out;
+}
+
+.pager.active{
+	cursor: default;
+	background: #7978b1;
+}
+
+.pager:not(.active):hover{
+	border-color: #9897bf;
+}
+
+#slider{
+	position: relative;
+	width: 200%;
+	transform: translateX(-49%)
+}
+
+#slider .row{
+	padding: 1.7em 1.4em;
+	min-width: 50%;
+}
+
+#staffList .col-md-3:nth-child(n + 14){
+	opacity: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.staff-item {
+	text-align: center;
+	margin: 0 -0.5em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.staff-image {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin: 0 auto;
+	color: #fff;
+	margin-bottom: 0.9em;
+	overflow: hidden;
+	background: #ffd9b8;
+}
+
+.staff-image img {
+	background: #ccc;
+	width: 100% !important;
+	height: 100% !important;
+	/* height: 240px; */
+	object-fit: cover;
+	object-position: top center;
+	mix-blend-mode: multiply;
+}
+
+.staff-item h3 {
+	font-size: 0.9em;
+	color: #cecef5;
+	/* color: #daccb7; */
+}
+
+.staff-item p {
+	font-family: Lato, sans-serif;
+	font-size: .7em;
+	line-height: 1.35em;
+	margin-top: 0.3em;
+	color: #a1a0c3;
+	/* color: #c2c1d2; */
+}
+
+#rectorWordWrapper{
+	min-height: 400px;
+	max-width: 1000px;
+	padding: 0;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	position: relative;
+}
+
+#rectorWordWrapper:before {
+	content: '';
+	position: absolute;
+	left: -20%;
+	top: -10%;
+	width: 100%;
+	height: 700px;
+	background-size: cover;
+	background-position: top left;
+	background-image: url(../img/speaker2.png);
+
+	transform: scale(0.8)
+}
+
+#rectorWordWrapper h2 {
+	font-family: Black, sans-serif;
+	font-family: Regular, sans-serif;
+	font-size: 2.7em;
+	max-width: 95%;
+	margin-bottom: 0.4em;
+	margin-top: 0.3em;
+	color: var(--main-color);
+}
+
+#rectorWordWrapper p{
+	font-family: Lato,
+	sans-serif;
+	font-size: 1.09em;
+	line-height: 2.1em;
+	margin-bottom: 1.3em;
+	color: #666;
+	/* text-align: justify; */
+}
+
+#rectorImage{
+	display: inline-block;
+	float: left;
+	text-align: center;
+	padding: 0.5em 2em 0.7em 0;
+}
+
+#rectorImage div{
+	display: inline-block;
+	height: 300px;
+	width: 280px;
+	margin-bottom: 0.7em;
+	display: block
+}
+
+#rectorImage span{
+	font-size: 0.85em;
+	color: #777;
+	line-height: 0;
+	display: block;
+	margin-top: 4.2em;
+}
+/*MEDIA QUERIES*/
+@media screen and (min-width: 521px){
+    
+}
+
+@media screen and (max-width: 520px){
+    
+}

@@ -1,0 +1,297 @@
+body{
+	--color-yellow: #fdd91b;
+	--color-green: #00a950;
+	--color-blue: #01a1dd;
+}
+
+body.locked{
+    overflow-y: hidden;
+}
+
+.blue-text{
+	color: #01a1dd
+	/* color: #04a2db; */
+}
+
+.text-italic{
+	font-style: italic;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-upper{
+	text-transform: uppercase;
+}
+
+.text-bold{
+	font-weight: bold;
+}
+
+.button{
+    display: inline-block;
+	min-width: 350px;
+	max-width: 100%;
+    padding: 1.6rem 3rem;
+	background: transparent;
+	border: 3px solid #555;
+	text-align: center;
+	letter-spacing: 0.05rem;
+	font-size: 1.6rem;
+}
+
+.action-button{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+	padding: 0;
+	color: #000;
+}
+
+.action-button svg{
+	width: 40px;
+	height: 40px;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.pointer-events-none{
+	pointer-events:none
+}
+
+.pointer-events-auto{
+	pointer-events:auto
+}
+
+/* POSITION HELPERS */
+.position-absolute{
+    position: absolute;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-fixed{
+    position: fixed;
+}
+
+.pin-top, .pin-all{
+    top: 0;
+}
+
+.pin-bottom, .pin-all{
+    bottom: 0;
+}
+
+.pin-left, .pin-all{
+    left: 0;
+}
+
+.pin-right, .pin-all{
+    right: 0;
+}
+
+.image{
+	position: relative;
+	overflow: hidden;
+}
+
+.image img{
+	width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.section-wrapper{
+	max-width: 1400px;
+	padding: 0 3em;
+	margin: 0 auto;
+}
+
+header{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+    z-index: 90;
+	background-color: #fff;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../img/menu-bg.jpg');
+	transition: 0.25s ease-out;
+}
+
+header:not(.nav-open){
+	transform: translateY(calc(-100vh + 105px));
+}
+
+header #logo{
+    z-index: 1;
+}
+
+header #logo img{
+    height: 60px;
+}
+
+header > div:first-child{
+	overflow: auto;
+}
+
+#logoAndMenuTrigger{
+	background: #f1f1f1;
+	flex-shrink: 0;
+}
+
+#logoAndMenuTrigger > div:first-child{
+	height: 105px;
+}
+
+#logoAndMenuTrigger button{
+	font-family: "Dosis", sans-serif;
+	font-weight: bold;
+	border: none;
+	background: #eee;
+	padding: 0.6em;
+	cursor: pointer;
+}
+
+header:not(.nav-open) #logoAndMenuTrigger #menuCloser,
+header.nav-open #logoAndMenuTrigger #menuOpener{
+	display: none;
+}
+
+#logoAndMenuTrigger button span{
+	font-size: 1.5rem;
+	letter-spacing: 0.1em;
+	margin-bottom: 0.08em;
+	margin-right: 0.8em;
+}
+
+#logoAndMenuTrigger button svg{
+	height: 45px;
+	width: 45px;
+}
+
+nav{
+	width: 100%;
+	position: relative;
+	margin-top: 17vh;
+}
+
+nav > ul > li > a{
+    color: #000;
+	font-size: 2.4rem;
+	font-family: "Dosis", sans-serif;
+	font-weight: 600;
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+nav > ul > li > a + a{
+	margin-top: 0.2em;
+}
+
+nav > ul > li > ul a{
+	font-size: 1.05rem;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+    color: #fff;
+	text-transform: uppercase;
+	padding: 0.8em 0;
+	display: block;
+}
+
+footer{
+	background: #000;
+	color: #fff;
+}
+
+footer .section-wrapper{
+	padding: 2em 0;
+	font-size: 1.5em;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 521px){
+    .for-mob{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .section-wrapper{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .for-lg, .for-md{
+        display: none !important;
+	}
+
+	.button{
+		padding: 1.1rem 1.8rem;;
+		border: 2px solid #555;;
+		font-size: 1.1rem;
+	}
+
+	header:not(.nav-open){
+		transform: translateY(calc(-100vh + 65px));
+	}
+	
+	header #logo img{
+		height: 40px;
+	}
+	
+	#logoAndMenuTrigger > div:first-child{
+		height: 65px;
+	}
+	
+	#logoAndMenuTrigger button span{
+		display: none;
+	}
+	
+	#logoAndMenuTrigger button svg{
+		height: 30px;
+		width: 30px;
+	}
+
+	nav{
+		margin-top: 8vh;
+		padding: 0 1em;
+	}
+	
+	nav > ul{
+		margin-top: 0;
+		flex-direction: column;
+	}
+
+	nav > ul > li > a{
+		color: #000;
+		font-size: 2.4rem;
+		font-family: "Dosis", sans-serif;
+		font-weight: 600;
+		text-align: left;
+		margin-bottom: 1em;
+	}
+	
+	nav > ul > li > ul{
+		display: none;
+	}
+
+	footer .section-wrapper {
+		padding: 1.3em;
+		font-size: 1.5em;
+		line-height: 1.6em;
+	}
+}

@@ -1,0 +1,549 @@
+body {
+	
+}
+
+#banner{
+	margin-top: 105px;
+	margin-bottom: 10em;
+}
+
+#banner:before{
+	display: none;
+}
+
+#banner img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+#banner .text{
+	max-height: 670px;
+	height: calc(100vh - 102px);
+	height: calc(100vh - 285px);
+	z-index: 1;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#banner h2{
+	font-family: "Lato";
+	font-weight: bold;
+	text-align: center;
+	font-size: 5em;
+	max-width: 70%;
+}
+
+#banner h2 #bannerChangingText{
+	font-style: italic;
+	padding: 0.15em 0.3em;
+	border-bottom: 5px solid #01a1dd;;
+}
+
+#bannerScroller{
+	position: absolute;
+	bottom: -9em;
+	left: 0;
+	right: 0;
+	width: 80px;
+	height: 80px;
+	display: inline-flex;
+	margin: 2em auto;
+	border-radius: 50%;
+	border: none;
+	background: transparent;
+	z-index: 2;
+}
+
+#bannerScroller svg{
+	animation: drop 0.8s infinite;
+	stroke: #555;
+	width: 80px;
+	height: 80px;
+}
+
+@keyframes drop {
+	50% {
+		transform: translateY(12%);
+	}
+}
+
+.section-title{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-bottom: 5em;
+}
+
+.section-title h2{
+	font-size: 3.8em;
+	font-family: "Lato", sans-serif;
+}
+
+.section-title small{
+	font-family: "Dosis", sans-serif;
+	font-weight: normal;
+	font-size: 2.2em;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-bottom: 0.3em;
+	color: #000;
+}
+
+.section-title h2 a{
+	padding-bottom: 0.2em;
+	border-bottom: 5px solid currentColor;
+}
+
+.cta-section{
+	background-size: cover;
+	background-position: center 6%;
+	/* background-image: radial-gradient(circle at top right,rgba(34,153,204,0.72) 35%,rgba(4,161,219,0.66) 57%), url(../img/courses-bg.jpg); */
+}
+
+.cta-section .text{
+	padding: 2em 0.6em;
+    min-height: 450px;
+    color: #fff;
+}
+
+.cta-section .text h3{
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	font-size: 3.3em;
+    line-height: 1.1em;
+}
+
+.cta-section .text .button{
+	margin-top: 2em;
+	color: #daf4ff;
+	border-color: currentColor;
+}
+
+#aboutUs .section-wrapper{
+	/* padding-top: 4em; */
+	padding-bottom: 5.5em;
+	max-width: 1200px;
+}
+
+#aboutUs .section-wrapper > p:first-child{
+	font-size: 2.5em;
+	line-height: 1.4em;
+}
+
+#aboutUs .section-wrapper > hr{
+	border-width: 3px;
+	border-style: solid;
+	border-color: #01a1dd;
+	margin: 3em auto;
+	max-width: 400px;
+	width: 70%;
+}
+
+#aboutUs .section-wrapper > p:last-of-type{
+	font-size: 1.38em;
+	line-height: 1.8em;
+	max-width: 1000px;
+	margin: auto;
+	color: #303030;
+}
+
+#aboutUs .section-wrapper .button{
+	display: inline-block;
+	margin-top: 3em;
+}
+
+#courses{
+	background-image: radial-gradient(circle at top right,rgba(30, 110, 144, 0.86) 35%,rgba(14, 90, 119, 0.92) 57%), url(../img/courses-bg.jpg);
+}
+
+#projects{
+	background: #d9d9d9;
+}
+
+#projectsMover{
+	/* background: #00f; */
+	z-index: 1;
+	left: 0.8em !important;
+	right: 0.8em !important;
+}
+
+#projectsScroller{
+	background: #d2d2d2;
+	min-height: 720px;
+	position: relative;
+}
+
+.project-item{
+	padding: 4em;
+	width: 100%;
+	flex-shrink: 0;
+}
+
+.project-item .text{
+	max-width: 53%;
+}
+
+.project-item h3{
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	font-size: 3.2em;
+	margin-bottom: 0.5em;
+}
+
+.project-item p{
+	font-size: 1.3em;
+	line-height: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.project-item .button{
+	margin-top: 1.5em;
+}
+
+.project-item .image{
+	position: relative;
+	width: 40%;
+}
+
+.project-item .image img{
+	width: 100%;
+}
+
+#news{
+	background: #e3e3e3;
+	padding-top: 6em;
+	padding-bottom: 9em;
+}
+
+#news .section-wrapper > .layout{
+	margin-right: 0 -0.7em;
+}
+
+.news-item{
+	padding: 0 0.7em;
+	width: 33.333%;
+	position: relative;
+}
+
+.news-item > div{
+	min-height: 100%;
+	background: #fff;
+}
+
+.news-item .image{
+	background: #bbb;
+	height: 400px;
+}
+
+.news-item .text{
+	padding: 1.5em;
+	padding-bottom: 2.25em;
+}
+
+.news-item small{
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 0.18em;
+	color: #aaa;
+	margin-bottom: 1em;
+	display: block;
+}
+
+.news-item h3{
+	font-family: "Lato";
+	font-size: 1.5em;
+	line-height: 1.35em;
+	margin-bottom: 0.65em;
+}
+
+.news-item p{
+	font-family: "Lato";
+	font-size: 1.2em;
+	line-height: 1.7em;
+	margin-bottom: 1.5em;
+	color: #555;
+}
+
+.news-item span{
+	margin-top: auto;
+	letter-spacing: 0.1em;
+}
+
+#events{
+	padding: 8em 0;
+	background: #c7c7c7;
+}
+
+#events .section-title a{
+	color: #fff;
+}
+
+.event-item{
+	width: 48%;
+	position: relative;
+}
+
+.event-item > div{
+	min-height: 100%;
+	background: #fff;
+}
+
+.event-item .image{
+	background: #bbb;
+	height: 300px;
+}
+
+.event-item .text{
+	padding: 1.5em;
+}
+
+.event-item small{
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 0.18em;
+	color: #aaa;
+	margin-bottom: 1em;
+	display: block;
+}
+
+.event-item h3{
+	font-family: "Lato";
+	font-size: 1.5em;
+	line-height: 1.35em;
+	margin-bottom: 0.35em;
+}
+
+.event-item p{
+	font-family: "Lato";
+	font-size: 1.2em;
+	line-height: 1.7em;
+	color: #555;
+}
+
+.event-item span{
+	margin-top: auto;
+	letter-spacing: 0.1em;
+}
+
+.event-item .image{
+	background: #bbb;
+}
+
+.event-item .event-date{
+	background: #000;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.event-item .event-date span:first-child{
+	padding: 0.8em 1em;
+	font-size: 1.3em;
+}
+
+.event-item .event-date span:last-child{
+	padding: 0.3em 0.5em;
+	font-size: 3em;
+	font-weight: bold;
+	background: #01a1dd;
+}
+
+#climateRisk{
+	background-image: radial-gradient(circle at top right,rgba(30, 110, 144, 0.86) 35%,rgba(14, 90, 119, 0.92) 57%), url(../img/climate-risk-data-bg.jpg);
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 521px){
+    
+}
+
+@media screen and (max-width: 520px){
+	#banner{
+		/* margin-top: 65px; */
+		margin-top: 0;
+	}
+
+    #banner h2{
+		font-size: 2.5em;
+		line-height: 1.3em;
+		max-width: 100%;
+	}
+
+	.section-title{
+		margin-bottom: 3.5em;
+	}
+	
+	.section-title h2{
+		font-size: 2.2em;
+	}
+	
+	.section-title small{
+		font-size: 1.35em;
+		margin-bottom: 0.5em;
+	}
+
+	#aboutUs .section-wrapper > p:first-child {
+		font-size: 1.8em;
+		line-height: 1.4em;
+	}
+
+	#aboutUs .section-wrapper > hr{
+		border-width: 2px;
+	}
+
+	.cta-section .text h3{
+		font-size: 2.5em;
+		line-height: 1.1em;
+	}
+
+	#projects .section-wrapper{
+		padding: 0;
+	}
+
+	#projectsMover{
+		left: 0 !important;
+		right: 0 !important;
+	}
+
+	#projectsMover .action-button{
+		width: 55px;
+		height: 55px;
+	}
+	
+	#projectsMover .action-button svg{
+		width: 28px;
+		height: 28px;
+	}
+
+	#projectsScroller{
+		background: #eee;
+		min-height: 0;
+		position: relative;
+		padding: 1em 0;
+	}
+	
+	.project-item{
+		background: transparent;
+		padding: 0;
+		flex-shrink: 0;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.project-item > div{
+		width: 90%;
+		background: #ddd;
+		flex-direction: column-reverse;
+	}
+	
+	.project-item .image,
+	.project-item .text{
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.project-item .image{
+		background: #999;
+		height: 200px;
+		overflow: hidden;
+	}
+	
+	.project-item .image img{
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.project-item .text{
+		padding: 2em;
+	}
+	
+	.project-item .button{
+		min-width: 100%;
+	}
+	
+	.project-item h3{
+		font-family: "Lato", sans-serif;
+		font-weight: bold;
+		font-size: 2em;
+		line-height: 1.3em;
+		margin-bottom: 0.5em;
+	}
+	
+	.project-item p{
+		font-size: 1em;
+		line-height: 1.5em;
+		margin-bottom: 0.5em;
+	}
+	
+	.project-item .button{
+		margin-top: 1.5em;
+	}
+	
+	.project-item .image{
+		position: relative;
+		/* width: 40%; */
+	}
+
+	#news {
+		padding-top: 4em;
+		padding-bottom: 3em;
+	}
+
+	#news .section-wrapper > .layout{
+		flex-wrap: wrap;
+	}
+
+	.news-item{
+		width: 100%;
+		padding: 0;
+		margin-bottom: 2em;
+	}
+
+	.news-item .image{
+		height: 250px;
+	}
+	
+	.news-item p{
+		display: none;
+	}
+	
+	.news-item span{
+		margin-top: auto;
+		letter-spacing: 0.1em;
+	}
+
+	#events{
+		padding: 4em 0;
+	}
+
+	.event-item{
+		width: 100%;
+		margin-bottom: 2em;
+	}
+	
+	.event-item .image{
+		height: 180px;
+	}
+	
+	.event-item .event-date span:first-child{
+		padding: 0.8em 1em;
+		font-size: 1em;
+	}
+	
+	.event-item .event-date span:last-child{
+		padding: 0.3em 0.5em;
+		font-size: 2em;
+		font-weight: bold;
+		background: #01a1dd;
+	}
+}
