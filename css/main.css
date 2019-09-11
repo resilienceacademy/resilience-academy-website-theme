@@ -204,12 +204,16 @@ nav > ul > li > a + a{
 
 nav > ul > li > ul a{
 	font-size: 1.05rem;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 0.1em;
     color: #fff;
 	text-transform: uppercase;
 	padding: 0.8em 0;
 	display: block;
+}
+
+nav > ul > li > ul a:hover{
+	color: #f6e912;
 }
 
 footer{
@@ -291,7 +295,7 @@ footer .section-wrapper{
 
 	footer .section-wrapper {
 		padding: 1.3em;
-		font-size: 1.5em;
+		font-size: 1.3em;
 		line-height: 1.6em;
 	}
 }

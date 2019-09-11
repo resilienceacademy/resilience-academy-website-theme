@@ -13,16 +13,15 @@
     <meta name="description" content="">
     <meta name="author" content="Walter Kimaro">
 
-
 	<link rel="icon" href="logo.png">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/flexboxgrid.min.css">
-	<link rel="stylesheet" href="css/flex.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/reset.css">
+	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/flexboxgrid.min.css">
+	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/flex.css">
+	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/main.css">
 	
 	<?php
 		if(isset($page)){
-			echo "<link rel='stylesheet' href='css/$page.css'>";
+			echo "<link rel='stylesheet' href='<?php echo get_bloginfo('template_directory'); ?>/css/$page.css'>";
 		}
 	?>
 </head>
@@ -82,7 +81,7 @@
 		<div id="logoAndMenuTrigger">
 			<div class="layout center justified section-wrapper">
 				<a id="logo" href="index.html" class="layout center">
-					<img src="img/logo.png" alt="">
+					<img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png" alt="">
 				</a>
 
 				<button onclick="toggleMenu()" id="menuOpener" class="layout center-center">

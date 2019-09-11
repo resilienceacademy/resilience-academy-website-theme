@@ -86,3 +86,9 @@ h6:not(.unbold) {
 	src:url("../fonts/Dosis/Dosis-Bold.ttf");
 	font-weight: bold;
 }
+
+@font-face{
+	font-family:"Dosis";
+	src:url("../fonts/Dosis/Dosis-SemiBold.ttf");
+	font-weight: 600;
+}

@@ -34,14 +34,35 @@ body {
 	font-family: "Lato";
 	font-weight: bold;
 	text-align: center;
-	font-size: 5em;
-	max-width: 70%;
+	font-size: 4.7em;
+	max-width: 80%;
 }
 
 #banner h2 #bannerChangingText{
 	font-style: italic;
 	padding: 0.15em 0.3em;
 	border-bottom: 5px solid #01a1dd;;
+	position: relative;
+	display: inline-block;
+	width: 280px;
+}
+
+#banner h2 #bannerChangingText span{
+	position: absolute;
+	top: 0.2em;
+	left: 0;
+	right: 0;
+	text-align: center;
+	transition: transform 0.25s ease-out;
+}
+
+#banner h2 #bannerChangingText small{
+	display: block;
+	transition: opacity 0.25s ease-out;
+}
+
+#banner h2 #bannerChangingText small:not(.current){
+	opacity: 0;
 }
 
 #bannerScroller{
@@ -109,7 +130,7 @@ body {
 
 .cta-section .text{
 	padding: 2em 0.6em;
-    min-height: 450px;
+    min-height: 650px;
     color: #fff;
 }
 
@@ -167,6 +188,28 @@ body {
 	background: #d9d9d9;
 }
 
+#projects .action-button{
+	position: relative;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+	outline: none;
+}
+
+#projects .action-button:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transition: opacity 0.25s ease-out;
+}
+
+#projects .action-button:not(:hover):after{
+	opacity: 0;
+}
+
 #projectsMover{
 	/* background: #00f; */
 	z-index: 1;
@@ -178,6 +221,7 @@ body {
 	background: #d2d2d2;
 	min-height: 720px;
 	position: relative;
+	transition: 0.35s ease-out;
 }
 
 .project-item{
@@ -362,6 +406,137 @@ body {
 	background-image: radial-gradient(circle at top right,rgba(30, 110, 144, 0.86) 35%,rgba(14, 90, 119, 0.92) 57%), url(../img/climate-risk-data-bg.jpg);
 }
 
+#contactUs{
+	padding: 5em 0;
+}
+
+#contactUs h3{
+	font-size: 1.8em;
+	font-family: "Lato", sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 0.8em;
+}
+
+#contactUs .section-wrapper{
+	max-width: 1200px;
+}
+
+#contactUsForm{
+	width: 60%;
+}
+
+#contactUsForm .form-group{
+	margin-bottom: 1.5em;
+}
+
+#contactUsForm label{
+	display: none;
+}
+
+#contactUsForm input,
+#contactUsForm textarea,
+#contactUsForm .button{
+	width: 100%;
+}
+
+#contactUsForm input,
+#contactUsForm textarea{
+	width: 100%;
+	padding: 1.2rem 1.3rem;
+	background: transparent;
+	border: 3px solid #555;
+	letter-spacing: 0.05rem;
+	font-size: 1.7rem;
+	outline-color: rgba(1, 161, 221, 0.1);
+}
+
+#contactUsForm textarea{
+	resize: none;
+}
+
+#contactUsForm .button{
+	padding: 0.7em 0;
+	font-size: 1.5rem;
+	font-weight: 600;
+	font-family: "Dosis", sans-serif;
+	letter-spacing: 0.18em;
+}
+
+#connect{
+	width: 240px;
+}
+
+#connect li{
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	background: #333;
+	color: #fff;
+}
+
+#connect li svg{
+	width: 26px;
+	height: 26px;
+	fill: currentColor;
+}
+
+#connect li:last-of-type svg{
+	width: 30px;
+	height: 30px;
+}
+
+#subscribe{
+	color: #fff;
+	background-size: cover;
+	background-image: linear-gradient(180deg,rgba(4,162,219,0.83) 0%,rgba(34,153,204,0.87) 100%),url(https://staging.resilienceacademy.ac.tz/wp-content/uploads/2019/06/Screen-Shot-2018-06-04-at-17.22.21-Copy.png);
+}
+
+#subscribe .section-wrapper{
+	padding-top: 4em;
+	padding-bottom: 4em;
+	max-width: 1200px;
+}
+
+#subscribe h3{
+	font-size: 2.35em;
+	flex-shrink: 0;
+	margin-right: 1.5em;
+}
+
+#subscribe .button{
+	border-width: 4px;
+	min-width: 210px;
+	color: #fff;
+	border-color: #000;
+	padding: 0.55em 1em;
+}
+
+#subscribe input{
+	padding: 0.88rem 0;
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid #000;
+	letter-spacing: 0.05rem;
+	font-size: 1.7rem;
+	outline: none;
+	flex: 1;
+	margin-right: 1em;
+	color: #fff;
+}
+
+#subscribe input::-webkit-input-placeholder {
+    color: #444;
+}
+
+#subscribe input:-ms-input-placeholder {
+    color: #444;
+}
+
+#subscribe input::placeholder {
+    color: #444;
+}
+
 /*MEDIA QUERIES*/
 @media screen and (min-width: 521px){
     
@@ -401,8 +576,12 @@ body {
 		border-width: 2px;
 	}
 
+	.cta-section .text {
+		min-height: 380px;
+	}
+
 	.cta-section .text h3{
-		font-size: 2.5em;
+		font-size: 2.2em;
 		line-height: 1.1em;
 	}
 
@@ -545,5 +724,36 @@ body {
 		font-size: 2em;
 		font-weight: bold;
 		background: #01a1dd;
+	}
+
+	#contactUs > .section-wrapper > .layout{
+		flex-direction: column-reverse;
+	}
+	
+	#contactUs #connect{
+		margin-bottom: 3em;
+	}
+	
+	#contactUs #contactUsForm{
+		width: 100%;
+	}
+
+	#contactUsForm input,
+	#contactUsForm textarea{
+		border-width: 2px;
+	}
+
+	#subscribe input{
+		margin-top: 0.9em;
+		margin-bottom: 1.2em;
+		border-width: 2px;
+		margin-right: 0;
+	}
+	
+	#subscribe .button{
+		border-width: 2px;
+		width: 100%;
+		padding: 1.1rem 1.8rem;
+		font-size: 1.3rem;
 	}
 }
