@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tanzania Resilience Academy</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#003a75">
     <meta name="apple-mobile-web-app-status-bar-style" content="#003a75">
