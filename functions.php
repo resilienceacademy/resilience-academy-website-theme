@@ -67,7 +67,7 @@ function setting_facebook()
 function custom_settings_page_setup()
 {
     add_settings_section('section', 'All Settings', null, 'theme-options');
-    
+
     add_settings_field('twitter', 'Twitter URL', 'setting_twitter', 'theme-options', 'section');
     register_setting('section', 'twitter');
 
@@ -80,3 +80,7 @@ function custom_settings_page_setup()
 }
 
 add_action('admin_init', 'custom_settings_page_setup');
+
+
+// Support Featured Images
+add_theme_support( 'post-thumbnails' );
