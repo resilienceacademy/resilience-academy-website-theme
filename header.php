@@ -11,14 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <meta name="author" content="Walter Kimaro">
+    <meta name="author" content="Resilience Academy">
 
     <link rel="icon" href="logo.png">
-    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/reset.css">
-    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/flexboxgrid.min.css">
-    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/flex.css">
-    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/main.css">
-    <link rel='stylesheet' href='<?php echo get_bloginfo('template_directory'); ?>/css/home.css'>
     <?php wp_head();?>
 </head>
 <body class="show-na">
