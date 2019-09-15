@@ -6,7 +6,6 @@
         All content licensed under CC-BY-SA, Tanzania Resilience Academy 2019
     </div>
 </footer>
-
 <script>
     var header = document.querySelector('header');
     var body = document.body;
