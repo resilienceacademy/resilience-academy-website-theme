@@ -1,7 +1,9 @@
 <div class="news-item">
     <div class="layout vertical">
         <div class="image">
-            <img src="<?php the_post_thumbnail_url(); ?>" alt="">
+            <img src="<?php if ( has_post_thumbnail() ) {
+                the_post_thumbnail();
+            } ?>" alt="">
         </div>
 
         <div class="text flex layout vertical">
