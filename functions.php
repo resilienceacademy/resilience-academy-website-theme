@@ -47,11 +47,12 @@ function custom_settings_page()
  * Include navigation menus
  */
 
-function register_resilienceacademy_menu() {
-    register_nav_menu( 'resilienceacademy-menu', __( 'Resilience Academy Menu' ) );
+function register_resilienceacademy_menu()
+{
+    register_nav_menu('resilienceacademy-menu', __('Resilience Academy Menu'));
 }
-add_action( 'init', 'register_resilienceacademy_menu' );
 
+add_action('init', 'register_resilienceacademy_menu');
 
 
 // Twitter
@@ -93,4 +94,27 @@ add_action('admin_init', 'custom_settings_page_setup');
 
 
 // Support Featured Images
-add_theme_support( 'post-thumbnails' );
+add_theme_support('post-thumbnails');
+
+
+// Custom Post Type
+function create_my_custom_post()
+{
+    register_post_type('my-custom-post',
+        array(
+            'labels' => array(
+                'name' => __('My Custom Post'),
+                'singular_name' => __('My Custom Post'),
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail',
+                'custom-fields'
+            )
+        ));
+}
+
+add_action('init', 'create_my_custom_post');
