@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <a href="#aboutUs" id="bannerScroller" class="layout center-center">
+    <a href="#sectionEvAn" id="bannerScroller" class="layout center-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
     </a>
 </div>
@@ -64,45 +64,16 @@
     <div class="section-wrapper position-relative">
         <div class="overflow-hidden" style="background: #d2d2d2;">
             <div id="projectsScroller" class="layout center">
-                <div class="project-item">
-                    <div class="layout start justified">
-                        <div class="text">
-                            <h3 class="blue-text">Data Visualization Challenge</h3>
-                            <p>
-                                The Resilience Academy invites students to participate in a Data Visualization Challenge using data collected through the programme.<br>
-                                More information on the challenge can be found on the Research page.
-                            </p>
-
-                            <a href="#" class="button text-upper">
-                                More Information
-                            </a>
-                        </div>
-
-                        <div class="image">
-                            <img src="https://staging.resilienceacademy.ac.tz/wp-content/uploads/2019/08/Dat-Visualisation-Challenge-2019_2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item layout start justified">
-                    <div class="text">
-                        <h3 class="blue-text">
-                            Community Mapping for Resilience
-                        </h3>
-                        <p>
-                            Ramani Huria is a community-based mapping project that began in Dar es Salaam, Tanzania, training university students and citizens to create highly accurate maps of the most flood-prone areas of their city.<br>
-                            Lessons learned and methods used have been compiled into a ‘cookbook’ for risk mapping – now available online.
-                        </p>
-
-                        <a href="#" class="button text-upper">
-                            Download The Handbook
-                        </a>
-                    </div>
-
-                    <div class="image">
-                        <img src="https://staging.resilienceacademy.ac.tz/wp-content/uploads/2019/08/The-book-1.jpg" alt="">
-                    </div>
-                </div>
+                <?php
+                $args = array(
+                    'post_type' => 'announcements',
+                    'orderby' => 'menu_order',
+                    'order' => 'ASC'
+                );
+                $custom_query = new WP_Query($args);
+                while ($custom_query->have_posts()) : $custom_query->the_post();
+                    get_template_part('content-announcement', get_post_format());
+                endwhile; ?>
             </div>
         </div>
 
@@ -250,45 +221,4 @@
         </div>
     </div>
 </section>
-
-<section id="subscribe">
-    <div class="section-wrapper layout wrap center justified">
-        <h3>Subscribe to our news letter</h3>
-        <div class="layout wrap center flex">
-            <input type="text" placeholder="Your email">
-            <button class="button">
-                SIGN UP
-            </button>
-        </div>
-    </div>
-</section>
-
-<script>
-    var projectsScroller = document.querySelector("#projectsScroller");
-    var projectsSlideIndex = 0;
-    var projects = document.querySelectorAll('.project-item');
-    function moveProjects(dir){
-        var newIndex = projectsSlideIndex + dir;
-        var canGoForward = newIndex >= 0 && dir === -1;
-        var canGoBack = newIndex < projects.length && dir === 1;
-
-        if(canGoBack || canGoForward){
-            projectsSlideIndex = newIndex;
-            projectsScroller.style.transform = "translateX("+(-100 * newIndex)+"%)";
-        }
-    }
-
-
-    var bannerChangingTexts = document.querySelectorAll("#bannerChangingText small");
-    var bannerChangingTextsScroller = document.querySelector("#bannerChangingText span");
-    var bannerChangingTextIndex = 0;
-    var bannerChangingTextHeight = bannerChangingTexts[0].getBoundingClientRect().height;
-
-    setInterval(() => {
-        bannerChangingTextIndex = bannerChangingTextIndex === bannerChangingTexts.length - 1 ? 0 : bannerChangingTextIndex + 1;
-        bannerChangingTextsScroller.style.transform = "translateY("+(-bannerChangingTextHeight * bannerChangingTextIndex)+"px)";
-        document.querySelector("#bannerChangingText .current").classList.remove('current');
-        bannerChangingTexts[bannerChangingTextIndex].classList.add('current');
-    }, 3000);
-</script>
 <?php get_footer(); ?>
