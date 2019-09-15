@@ -100,7 +100,11 @@
 
         <div class="layout">
             <?php
-            if ( have_posts() ) : while ( have_posts() ) : the_post();
+            $args = array(
+                'posts_per_page' => 3,
+            );
+            $custom_query = new WP_Query($args);
+            if ( $custom_query->have_posts() ) : while ($custom_query->have_posts()) : $custom_query->the_post();
                 get_template_part( 'content', get_post_format() );
             endwhile; endif;
             ?>
@@ -122,6 +126,7 @@
             $args = array(
                 'post_type' => 'events',
                 'orderby' => 'menu_order',
+                'posts_per_page' => 2,
                 'order' => 'ASC'
             );
             $custom_query = new WP_Query($args);
