@@ -119,3 +119,27 @@ function create_announcements_post()
 }
 
 add_action('init', 'create_announcements_post');
+
+
+// Events Post Type
+function create_events_post()
+{
+    register_post_type('events',
+        array(
+            'labels' => array(
+                'name' => __('Events'),
+                'singular_name' => __('Event'),
+            ),
+            'public' => true,
+            'menu_icon' => 'dashicons-calendar-alt',
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail',
+                'custom-fields'
+            )
+        ));
+}
+
+add_action('init', 'create_events_post');

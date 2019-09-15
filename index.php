@@ -118,45 +118,16 @@
         </div>
 
         <div class="layout wrap justified">
-            <div class="event-item">
-                <div class="layout vertical">
-                    <div class="image">
-                        <img src="https://staging.resilienceacademy.ac.tz/wp-content/uploads/2019/08/official-launch-of-the-elia-biennial-1-Copy.png" alt="">
-
-                        <div class="event-date position-absolute pin-top pin-left">
-                            <span>OCT</span>
-                            <span>02</span>
-                        </div>
-                    </div>
-
-                    <div class="text flex layout vertical">
-                        <h3>URTZ 2019 Conference</h3>
-                        <p>
-                            2 - 4 October 9 AM - 4 PM, National Museaum
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="event-item">
-                <div class="layout vertical">
-                    <div class="image">
-                        <img src="https://staging.resilienceacademy.ac.tz/wp-content/uploads/2019/06/img-20180915-wa0139_44116338715_o.jpg" alt="">
-
-                        <div class="event-date position-absolute pin-top pin-left">
-                            <span>AUG</span>
-                            <span>05</span>
-                        </div>
-                    </div>
-
-                    <div class="text flex layout vertical">
-                        <h3>World Clean Up Day</h3>
-                        <p>
-                            5 August 10 AM - 4 PM, Coco Beach
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <?php
+            $args = array(
+                'post_type' => 'events',
+                'orderby' => 'menu_order',
+                'order' => 'ASC'
+            );
+            $custom_query = new WP_Query($args);
+            while ($custom_query->have_posts()) : $custom_query->the_post();
+                get_template_part('content-event', get_post_format());
+            endwhile; ?>
         </div>
     </div>
 </section>
