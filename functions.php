@@ -8,7 +8,7 @@ function resilienceacademy_scripts()
     wp_enqueue_style('reset', get_template_directory_uri() . '/css/reset.css');
     wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css');
     wp_enqueue_style('home', get_template_directory_uri() . '/css/home.css');
-    wp_enqueue_script('home', get_template_directory_uri() . '/js/home.js');
+    wp_enqueue_script('home', get_template_directory_uri() . '/js/home.js', array('jquery'), '1.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'resilienceacademy_scripts');
@@ -41,6 +41,16 @@ function custom_settings_page()
         </form>
     </div>
 <?php }
+
+
+/**
+ * Include navigation menus
+ */
+
+function register_resilienceacademy_menu() {
+    register_nav_menu( 'resilienceacademy-menu', __( 'Resilience Academy Menu' ) );
+}
+add_action( 'init', 'register_resilienceacademy_menu' );
 
 
 
