@@ -1,3 +1,4 @@
+
 <div class="event-item">
     <div class="layout vertical">
         <div class="image">
@@ -14,7 +15,7 @@
         <div class="text flex layout vertical">
             <h3><?php the_title(); ?></h3>
             <p>
-                2 - 4 October 9 AM - 4 PM, National Museaum
+                <?php echo get_post_meta(get_the_ID(), 'duration', true); ?>, <?php echo get_post_meta(get_the_ID(), 'address', true); ?>
             </p>
         </div>
     </div>
