@@ -97,16 +97,17 @@ add_action('admin_init', 'custom_settings_page_setup');
 add_theme_support('post-thumbnails');
 
 
-// Custom Post Type
-function create_my_custom_post()
+// Announcements Post Type
+function create_announcements_post()
 {
-    register_post_type('my-custom-post',
+    register_post_type('announcements',
         array(
             'labels' => array(
-                'name' => __('My Custom Post'),
-                'singular_name' => __('My Custom Post'),
+                'name' => __('Announcements'),
+                'singular_name' => __('Announcement'),
             ),
             'public' => true,
+            'menu_icon' => 'dashicons-megaphone',
             'has_archive' => true,
             'supports' => array(
                 'title',
@@ -117,4 +118,4 @@ function create_my_custom_post()
         ));
 }
 
-add_action('init', 'create_my_custom_post');
+add_action('init', 'create_announcements_post');
