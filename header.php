@@ -34,7 +34,7 @@
 
     <div id="logoAndMenuTrigger">
         <div class="layout center justified section-wrapper">
-            <a id="logo" href="index.html" class="layout center">
+            <a id="logo" href="<?php echo get_home_url(); ?>" class="layout center">
                 <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.png" alt="">
             </a>
 

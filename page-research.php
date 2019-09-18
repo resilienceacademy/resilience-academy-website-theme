@@ -4,7 +4,6 @@ get_header();
 
 ?>
 
-
 <section id="banner">
     <div class="section-wrapper">
         <h2>
