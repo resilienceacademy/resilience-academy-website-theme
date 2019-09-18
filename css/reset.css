@@ -47,8 +47,8 @@ h6:not(.unbold) {
 
 @font-face{
 	font-family:"Lato";
-	font-weight: 600;
-	src:url("../fonts/Lato/Lato-Hairline.ttf");
+	font-weight: bold;
+	src:url("../fonts/Lato/Lato-Bold.ttf");
 }
 
 @font-face{
@@ -59,14 +59,15 @@ h6:not(.unbold) {
 
 @font-face{
 	font-family:"Lato";
-	font-weight: bold;
-	src:url("../fonts/Lato/Lato-Bold.ttf");
+	font-weight: 900;
+	src:url("../fonts/Lato/Lato-Black.ttf");
 }
 
 @font-face{
 	font-family:"Lato";
 	font-weight: 900;
-	src:url("../fonts/Lato/Lato-Black.ttf");
+	font-style: italic;
+	src:url("../fonts/Lato/Lato-BlackItalic.ttf");
 }
 
 @font-face{

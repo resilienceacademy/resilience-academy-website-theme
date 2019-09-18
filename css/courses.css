@@ -1,0 +1,536 @@
+#banner{
+	margin-top: 105px;
+    background: #b5ad0d;
+}
+
+#banner .section-subtitle{
+	font-family: "Dosis", sans-serif;
+	font-size: 2.2em;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-bottom: 0.3em;
+	color: #000;
+	display: block;
+	padding: 1em 0;
+	margin-top: 1em;
+}
+
+#courseTabList{
+	padding: 0 4em;
+	position: relative;
+	overflow-x: auto;
+}
+
+#courseTabList:before{
+	content: '';
+	position: relative;
+	display: block;
+	border-top: 5px solid #000;
+}
+
+.course-tab{
+	font-size: 1.1em;
+	letter-spacing: 0.1em;
+	border-top: 8px solid transparent;
+	padding: 1.7em 0;
+}
+
+.course-tab.active{
+	border-color: #fff;
+}
+
+#banner .action-button{
+	position: relative;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+	outline: none;
+}
+
+#banner .action-button:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	transition: opacity 0.25s ease-out;
+}
+
+#banner .action-button:not(:hover):after{
+	opacity: 0;
+}
+
+#bannerMover{
+	/* background: #00f; */
+	z-index: 1;
+	left: 0.8em !important;
+	right: 0.8em !important;
+}
+
+#bannerScroller{
+	position: relative;
+	transition: 0.35s ease-out;
+}
+
+.banner-item{
+	padding: 4em 5em;
+	width: 100%;
+	flex-shrink: 0;
+}
+
+.banner-item h2{
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	font-size: 4.5em;
+	margin-bottom: 0.5em;
+	color: #fff;
+}
+
+.banner-item h2 strong{
+	color: #b6ae0d;
+	font-size: 2.4em;
+	margin-right: 0.18em;
+	margin-top: -0.09em;
+}
+
+.module-items{
+	margin-bottom: 2em;
+}
+
+.module-item{
+	width: 33.33%;
+	padding: 0 0.5em;
+}
+
+.module-item div{
+	border: 4px solid #fff;
+	min-height: 100%;
+	padding: 1.7em 0;
+}
+
+.module-item h3{
+	text-transform: uppercase;
+	font-size: 2.6em;
+	letter-spacing: 0.11em;
+	margin-bottom: 0.4em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.module-item h3:before,
+.module-item h3:after{
+	content: '';
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: #b6ae0d;
+	flex-shrink: 0;
+	margin: 0 0.4em;
+}
+
+.module-item h3:after{
+	margin-left: 0.2em;
+}
+
+.module-item p{
+	line-height: 1.5em;
+	margin-bottom: 0.5em;
+	text-align: center;
+	letter-spacing: 0.035em;
+	font-size: 1.25em;
+	font-weight: 700;
+	padding: 0 1.5em;
+}
+
+.module-item:hover{
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.course-section{
+	padding: 6em 0;
+}
+
+.course-section.coloured-bg{
+	background: #dbd10f;
+}
+
+.course-section-title{
+	color: #b6ae0d;
+	border: 3px solid currentColor;
+	margin-bottom: 5em;
+}
+
+.course-section.coloured-bg .course-section-title{
+	color: #fff;
+}
+
+.course-section-title h3 span{
+	color: #000;
+}
+
+.course-theme{
+	border-bottom: 3px dashed currentColor;
+	padding: 2.2em 3.5em;
+}
+
+.course-theme h3{
+	font-size: 2.5em;
+	font-weight: normal;
+	font-family: "Lato", sans-serif;
+}
+
+.course-theme h3 strong{
+	display: inline-block;
+	margin-right: 0.3em;
+}
+
+.course-module{
+	padding: 3.5em;
+}
+
+.course-module h3{
+	font-size: 2.5em;
+	font-family: "Lato", sans-serif;
+	text-transform: uppercase;
+	line-height: 1.15em;
+	letter-spacing: 0.07em;
+}
+
+.course-module h3 strong{
+	text-transform: none;
+	font-family: "Dosis", sans-serif;
+	font-size: 2.2em;
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 0.35em;
+	margin-top: 0.21em;
+	flex-shrink: 0;
+	letter-spacing: 0.06em
+}
+
+.course-section-info .course-section-details{
+	width: 30%;
+	background: #eee;
+}
+
+.course-section-details div{
+	height: 33.333%;
+	padding: 2em 1.3em;
+	font-size: 1.75em;
+	letter-spacing: 0.04em;
+	color: #fff;
+}
+
+.course-section-details div strong{
+	display: block;
+	font-size: 0.7em;
+	margin-bottom: 0.6em;
+	letter-spacing: 0.1em;
+}
+
+.course-section-details div:first-child{
+	background: #f6e912;
+	color: #000;
+}
+
+.course-section-details div:nth-child(2){
+	background: #cdc412;
+}
+
+.course-section-details div:last-child{
+	background: #b6ae0d;
+}
+
+.course-section-info .image{
+	height: 600px;
+	background: #ddd;
+}
+
+.course-section-about{
+	margin-top: 6em;
+	padding-left: 30%;
+}
+
+.course-section-about h3{
+	font-size: 3.2em;
+	font-weight: normal;
+	letter-spacing: 0.03em;
+	margin-bottom: 0.8em;
+	color: #b6ae0d;
+}
+
+.course-section.coloured-bg .course-section-about h3{
+	color: #fff;
+}
+
+.course-section-about p{
+	font-size: 1.5em;
+	line-height: 1.5em;
+	letter-spacing: 0.015em;
+	margin-bottom: 1.2em;
+}
+
+#moreCourses{
+	padding: 6em 0; 
+	background: #ddd;
+}
+
+#moreCourses .section-wrapper > h2{
+	text-align: center;
+	font-size: 3.8em;
+	font-family: "Lato", sans-serif;
+	margin-bottom: 0.65em;
+}
+
+#moreCourses .section-wrapper > h2 a{
+	display: inline-block;
+	padding-bottom: 0.2em;
+	border-bottom: 5px solid currentColor;
+}
+
+.more-course-item{
+	padding: 0.8em;
+	flex-shrink: 0;
+	width: 33.333%;
+}
+
+.more-course-item div{
+	padding: 3em 1.5em;
+	background: #bbb;
+	min-height: 100%;
+}
+
+.more-course-item div strong{
+	margin-top: -0.15em;
+	font-size: 9em;
+	font-weight: bold;
+	margin-right: 0.2em;
+	flex-shrink: 0;
+	color: rgba(0, 0, 0, 0.1);
+}
+
+.more-course-item div span{
+	font-size: 1.9em;
+	line-height: 1.3em;
+	letter-spacing: 0.04em;
+	color: #fff;
+}
+
+@media screen and (max-width: 520px){
+	#banner{
+		margin-top: 0;
+	}
+	
+    #banner .section-wrapper{
+		padding: 0;
+	}
+
+	#bannerMover{
+		bottom: auto;
+		top: 100%;
+		margin-top: -27px;
+		left: 25% !important;
+		right: 25% !important;
+	}
+
+	#bannerMover .action-button{
+		width: 55px;
+		height: 55px;
+		background: #333;
+		color: #fff;
+	}
+
+	#banner .action-button:after{
+		opacity: 0;
+	}
+	
+	#bannerMover .action-button svg{
+		width: 28px;
+		height: 28px;
+	}
+
+	#bannerScroller{
+		position: relative;
+		padding: 1em 0;
+	}
+
+	#banner .section-subtitle{
+		margin-top: 2em;
+	}
+
+	#courseTabList:before{
+		display: none;
+	}
+	
+	#courseTabList{
+		border-top: 1px solid #000;
+		padding: 0;
+	}
+	
+	.course-tab{
+		font-size: 1.1em;
+		letter-spacing: 0.1em;
+		border-top: 5px solid transparent;
+		padding: 1.3em 0;
+		min-width: 120px;
+	}
+	
+	.course-tab.active{
+		border-color: #fff;
+	}
+
+	.banner-item{
+		padding: 0 0.6em;
+	}
+
+	.banner-item h2 {
+		font-size: 2.5em;
+	}
+
+	.module-item {
+		width: 100%;
+		padding: 0;
+		margin-left: 1em;
+		margin-bottom: 1em;
+	}
+	
+	.module-item:not(:last-of-type) {
+		border-bottom: 1px solid #938d19;
+	}
+
+	.module-item div {
+		border: none;
+		min-height: 100%;
+		padding: 0;
+	}
+	
+	.module-item h3:before,
+	.module-item h3:after{
+		display: none;
+	}
+	
+	.module-item h3{
+		margin-bottom: 0.2em;
+		font-size: 1.35em;
+		display: block;
+	}
+	
+	.module-item p{
+		font-size: 1em;
+		text-align: left;
+		padding: 0;
+		font-weight: normal;
+	}
+
+	.course-section {
+		padding-bottom: 4em;
+	}
+
+	.course-section-title {
+		margin-bottom: 2.5em;
+	}
+
+	.course-theme{
+		padding: 1.2em 1.5em;
+	}
+
+	.course-theme h3{
+		font-size: 1.8em;
+	}
+
+	.course-theme h3 strong{
+		display: block;
+		margin-bottom: 0.2em;
+		font-size: 0.8em;
+	}
+
+	.course-module{
+		padding: 1em 1.5em;
+	}
+
+	.course-module h3{
+		font-size: 1.8em;
+		flex-wrap: wrap;
+		letter-spacing: 0.05em;
+		line-height: 1.3em;
+	}
+	
+	.course-module h3 strong{
+		font-family: "Lato";
+		font-weight: normal;
+		font-size: 0.8em;
+		letter-spacing: 0;
+		margin-bottom: 0;
+	}
+	
+	.course-module h3 span{
+		width: 100%;
+		text-transform: none;
+		font-weight: normal;
+	}
+
+	.course-section-info > .layout{
+		flex-direction: column-reverse;
+	}
+
+	.course-section-info .image {
+		height: 200px;
+		background: #ddd;
+	}
+
+	.course-section-info .course-section-details{
+		width: 100%;
+	}
+	
+	.course-section-info .course-section-details > div{
+		padding: 1em 0;
+		height: auto;
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+	.course-section-about {
+		margin-top: 3.5em;
+		padding: 0 0.5em;
+	}
+
+	.course-section-about h3 {
+		font-size: 2.5em;
+		margin-bottom: 0.5em;
+	}
+
+	#moreCourses{
+		padding: 3em 0;
+		margin-top: -1.5em;
+	}
+
+	#moreCourses .section-wrapper > .layout{
+		flex-direction: column;
+	}
+
+	#moreCourses .section-wrapper > h2{
+		font-size: 2.2em;
+	}
+	
+	.more-course-item{
+		width: 100%;
+		padding: 0.5em 0;
+	}
+
+	.more-course-item div {
+		padding: 1.5em;
+		min-height: 160px;
+	}
+
+	.more-course-item div strong {
+		margin-top: -0.05em;
+		font-size: 5em;
+	}
+
+	.more-course-item div span {
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
+}

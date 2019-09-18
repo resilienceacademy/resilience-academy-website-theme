@@ -1,0 +1,164 @@
+#banner{
+    margin-top: 105px;
+    background: #01a1dd;
+}
+
+#banner .section-wrapper{
+    padding-top: 3.5em;
+    padding-bottom: 6.5em;
+}
+
+#banner .section-wrapper > div{
+    margin-top: 3em;
+}
+
+#banner .section-wrapper .button{
+    border-color: #000;
+    color: #fff;
+}
+
+#banner .section-wrapper > h2{
+	text-align: center;
+    font-size: 5.3em;
+    line-height: 1.2em;
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    font-weight: 900;
+}
+
+#banner .section-wrapper > h2 small,
+#banner .section-wrapper > h2 span.text-italic{
+    color: #000;
+    display: block;
+}
+
+#banner .section-wrapper > h2 span.text-italic{
+    margin-top: 0.15em;
+}
+
+#banner .section-wrapper > h2 small{
+	font-family: "Dosis", sans-serif;
+	font-weight: normal;
+	font-size: 0.45em;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-bottom: -0.3em;
+	color: #000;
+}
+
+#infoItems{
+    padding: 8em 0;
+}
+
+.info-item:not(:last-of-type){
+    margin-bottom: 6em;
+}
+
+.info-item:last-of-type{
+    margin-bottom: -3.5em;
+}
+
+.info-item .image{
+    height: 600px;
+}
+
+.info-item > div:last-of-type{
+    max-width: 600px;
+}
+
+@media screen and (min-width: 521px){
+    #banner .section-wrapper .button:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .decorated-inset-box{
+        padding: 3em;
+    }
+    
+    .decorated-inset-box div{
+        padding: 4em 2em;
+    }
+    
+    .decorated-inset-box div h3{
+        font-size: 3.3em;
+        margin-bottom: 0.3em;
+    }
+    
+    .decorated-inset-box div .button{
+        margin-top: 1.2em;	
+    }
+}
+
+@media screen and (max-width: 520px){
+    #banner{
+		margin-top: 60px;
+	}
+	
+    #banner .section-wrapper{
+        padding-top: 2.5em;
+        padding-bottom: 3.5em;
+    }
+    
+    #banner .section-wrapper > div{
+        flex-direction: column;
+        margin-top: 1.5em;
+    }
+    
+    #banner .section-wrapper .button:first-of-type{
+        margin-bottom: 1em;
+    }
+    
+	#banner .section-wrapper > h2{
+        font-size: 1.9em;
+        line-height: 1.5em;
+        font-weight: bold;
+    }
+    
+    #banner .section-wrapper > h2 small{
+        font-size: 0.85em;
+        margin-bottom: 0;
+    }
+    
+    #banner .section-wrapper > h2 span.text-italic{
+        font-weight: bold;
+        margin-top: 0.3em;
+    }
+
+    #infoItems{
+        padding: 4em 0;
+    }
+
+    .info-item:not(:last-of-type){
+        margin-bottom: 2em;
+    }
+
+    .info-item .image{
+        display: none;
+    }
+    
+    .info-item .position-absolute{
+        position: relative;
+    }
+
+    .decorated-inset-box {
+        padding: 1.5em;
+    }
+
+    .decorated-inset-box div {
+        font-size: 1.25em;
+        padding: 2.5em 0;
+    }
+    
+    .decorated-inset-box div h3 {
+        font-size: 1.8em;
+    }
+    
+    .decorated-inset-box div p {
+        font-size: 1.1em;
+    }
+    
+    .decorated-inset-box div .button{
+        margin-top: 1.1em;
+        font-size: 0.9em;
+    }
+}
