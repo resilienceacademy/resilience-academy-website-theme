@@ -48,7 +48,7 @@ get_header();
         </p>
 
         <div class="layout center-center">
-            <a href="#" class="button text-upper">
+            <a href="<?php echo get_home_url(); ?>/about" class="button text-upper">
                 Learn More
             </a>
         </div>
@@ -58,7 +58,7 @@ get_header();
 <section id="courses" class="cta-section">
     <div class="text layout vertical center-center text-center">
         <h3>Resilient solutions begin with education</h3>
-        <a href="#" class="button text-upper">
+        <a href="<?php echo get_home_url(); ?>/courses" class="button text-upper">
             View Our Courses
         </a>
     </div>
@@ -147,11 +147,11 @@ get_header();
             Accurate climate risk data informs <span class="for-lg"><br/></span>
             resilient decision-making
         </h3>
-        <a href="#" class="button text-upper">
+        <a href="<?php echo get_home_url(); ?>/research" class="button text-upper">
             View Our Repository
         </a>
     </div>
 </section>
-<?php get_template_part( 'includes/contact-us' );  ?>
+<?php get_template_part( 'includes/contact-us' ); ?>
 
 <?php get_footer(); ?>
