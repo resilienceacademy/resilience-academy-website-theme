@@ -293,62 +293,6 @@ nav > ul > li > ul a:hover{
 	color: #f6e912;
 }
 
-#contactUsSection{
-	padding: 5em 0;
-}
-
-#contactUsSection h3{
-	font-size: 1.8em;
-	font-family: "Lato", sans-serif;
-	font-weight: normal;
-	text-transform: uppercase;
-	margin-bottom: 0.8em;
-}
-
-#contactUsSection .section-wrapper{
-	max-width: 1200px;
-}
-
-#contactUsForm{
-	width: 60%;
-}
-
-#contactUsForm .form-group{
-	margin-bottom: 1.5em;
-}
-
-#contactUsForm label{
-	display: none;
-}
-
-#contactUsForm input,
-#contactUsForm textarea,
-#contactUsForm .button{
-	width: 100%;
-}
-
-#contactUsForm input,
-#contactUsForm textarea{
-	width: 100%;
-	padding: 1.2rem 1.3rem;
-	background: transparent;
-	border: 3px solid #555;
-	letter-spacing: 0.05rem;
-	font-size: 1.7rem;
-	outline-color: rgba(1, 161, 221, 0.1);
-}
-
-#contactUsForm textarea{
-	resize: none;
-}
-
-#contactUsForm .button{
-	padding: 0.7em 0;
-	font-size: 1.5rem;
-	font-weight: 600;
-	font-family: "Dosis", sans-serif;
-	letter-spacing: 0.18em;
-}
 
 #connect{
 	width: 240px;
@@ -502,22 +446,6 @@ footer .section-wrapper{
 		display: none;
 	}
 
-	#contactUsSection > .section-wrapper > .layout{
-		flex-direction: column-reverse;
-	}
-	
-	#contactUsSection #connect{
-		margin-bottom: 3em;
-	}
-	
-	#contactUsSection #contactUsForm{
-		width: 100%;
-	}
-
-	#contactUsForm input,
-	#contactUsForm textarea{
-		border-width: 2px;
-	}
 
 	#subscribe h3{
 		font-size: 2em;

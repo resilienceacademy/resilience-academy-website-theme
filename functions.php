@@ -7,6 +7,7 @@ function resilienceacademy_scripts()
     wp_enqueue_style('flex', get_template_directory_uri() . '/css/flex.css');
     wp_enqueue_style('reset', get_template_directory_uri() . '/css/reset.css');
     wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css');
+    wp_enqueue_style('contact-us', get_template_directory_uri() . '/css/includes/contact-us.css');
 }
 
 add_action('wp_enqueue_scripts', 'resilienceacademy_scripts');
