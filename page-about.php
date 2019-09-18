@@ -212,3 +212,5 @@ get_header();
         doMethodsMovement(index);
     }
 </script>
+
+<?php get_footer(); ?>
