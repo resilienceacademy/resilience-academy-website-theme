@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+wp_enqueue_style('home', get_template_directory_uri() . '/css/home.css');
+get_header();
+
+?>
 
 
 <div style="position: relative;">
