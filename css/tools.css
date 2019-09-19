@@ -1,0 +1,216 @@
+#tools{
+    margin-top: 105px;
+}
+
+#tools .section-wrapper{
+    max-width: 1200px;
+}
+
+#tools .section-wrapper > h2{
+	margin-top: 3.2em;
+	margin-bottom: 1.45em;
+	text-align: center;
+	font-size: 4em;
+	font-family: "Lato", sans-serif;
+}
+
+#tools .section-wrapper > h2 a{
+	padding-bottom: 0.2em;
+	border-bottom: 5px solid #01a1dd;
+}
+
+.tool-item{
+    margin-bottom: 8em;
+}
+
+.tool-item .tool-info{
+    width: 25%;
+    flex-shrink: 0;
+}
+
+.tool-info div{
+	height: 33.333%;
+	padding: 1em 1.3em;
+	font-size: 1.75em;
+	letter-spacing: 0.04em;
+}
+
+.tool-info div strong{
+	display: block;
+	font-size: 0.7em;
+	margin-bottom: 0.6em;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+.tool-info div:first-child{
+	color: #000;
+}
+
+.tool-info div:nth-child(2){
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.tool-info div:last-child{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.tool-item .tool-info,
+.tool-item .image{
+	height: 500px;
+}
+
+.tool-item .image{
+	background: #888;
+}
+
+.tool-details{
+    background: #ddd;
+    padding: 3.5em 3em;
+    padding-top: 2em;
+}
+
+.tool-details h3{
+    font-size: 3.6em;
+    color: #fff;
+    margin-bottom: 0.3em;
+}
+
+.tool-details p{
+    font-size: 1.6em;
+    line-height: 1.8em;
+}
+
+#data{
+    margin-bottom: 3.5em;
+}
+
+#data .section-wrapper{
+	max-width: 1100px;
+}
+
+#data h2{
+	font-size: 3.5em;
+	letter-spacing: 0.05em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.data-item .image{
+    position: relative;
+    height: 380px;
+    width: 40%;
+}
+
+.data-item .image img{
+    height: 100%;
+}
+
+.decorated-inset-box{
+    flex-shrink: 0;
+}
+
+.decorated-inset-box > div{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.decorated-inset-box div h3{
+	font-size: 3.6em;
+}
+
+.decorated-inset-box .button{
+	min-width: 120px;
+	padding: 0.6em 3em;
+	font-size: 1.6em;
+}
+
+@media screen and (max-width: 520px){
+	#tools{
+		margin-top: 0;
+	}
+    
+    #tools .section-wrapper > h2{
+		margin-top: 2.7em;
+		font-size: 2.8em;
+    }
+    
+    .tool-item:not(:last-of-type){
+        margin-bottom: 3em;
+    }
+    
+    .tool-item:last-of-type{
+        margin-bottom: 0;
+    }
+
+	.tool-item > .layout{
+		flex-direction: column-reverse;
+	}
+
+	.tool-item .image {
+		height: 200px;
+	}
+
+	.tool-item .tool-info{
+        height: auto;
+		width: 100%;
+	}
+	
+	.tool-item .tool-info > div{
+        padding: 0.7em 1em;
+		height: auto;
+		text-align: left;
+		font-size: 1.5em;
+    }
+    
+    .tool-item .tool-info > div strong{
+        color: #222;
+    }
+
+	.tool-about {
+		margin-top: 3.5em;
+		padding: 0 0.5em;
+    }
+
+    .tool-details {
+        padding: 2.5em 1.5em;
+        padding-top: 1.4em;
+    }
+
+    .tool-details h3 {
+        font-size: 2.6em;
+    }
+
+    .tool-details p {
+        font-size: 1.2em;
+    }
+
+    #data{
+		margin-top: 4em;
+		margin-bottom: 0;
+	}
+	
+	#data h2{
+		font-size: 2.5em;
+		margin-bottom: 1em;
+	}
+
+    .data-item .image{
+        display: none;
+    }
+
+    .decorated-inset-box div{
+		padding: 2.5em 0;
+	}
+	
+	.decorated-inset-box div h3{
+		font-size: 2.5em;
+	}
+	
+	.decorated-inset-box .button{
+		font-size: 1.3em;
+	}
+}
