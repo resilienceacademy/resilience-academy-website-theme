@@ -22,9 +22,8 @@ body {
 }
 
 #banner .text{
-	max-height: 670px;
-	height: calc(100vh - 102px);
-	height: calc(100vh - 285px);
+	max-height: 720px;
+	height: calc(100vh - 72px);
 	z-index: 1;
 	color: #fff;
 	background: rgba(0, 0, 0, 0.5);
