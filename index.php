@@ -98,7 +98,7 @@ get_header();
         <div class="section-title">
             <small>Our News</small>
             <h2>
-                Show me <a href="#" class="blue-text">everything</a>
+                Show me <a href="<?php echo get_home_url(); ?>/blogs" class="blue-text">everything</a>
             </h2>
         </div>
 
