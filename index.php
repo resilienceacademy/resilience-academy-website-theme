@@ -121,7 +121,7 @@ get_header();
         <div class="section-title">
             <small>Our Events</small>
             <h2>
-                Show me the <a href="#">calendar</a>
+                Show me the <a href="<?php echo get_home_url(); ?>/events">calendar</a>
             </h2>
         </div>
 
