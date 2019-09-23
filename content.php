@@ -9,7 +9,7 @@
         <div class="text flex layout vertical">
             <small><?php the_category(); ?></small>
 
-            <h3><?php the_title(); ?></h3>
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
             <p>
                 <?php the_excerpt(); ?>

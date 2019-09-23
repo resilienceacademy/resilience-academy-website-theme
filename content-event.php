@@ -13,7 +13,7 @@
         </div>
 
         <div class="text flex layout vertical">
-            <h3><?php the_title(); ?></h3>
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             <p>
                 <?php echo get_post_meta(get_the_ID(), 'duration', true); ?>, <?php echo get_post_meta(get_the_ID(), 'address', true); ?>
             </p>
