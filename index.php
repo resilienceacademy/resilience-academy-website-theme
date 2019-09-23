@@ -76,7 +76,7 @@ get_header();
                 );
                 $custom_query = new WP_Query($args);
                 while ($custom_query->have_posts()) : $custom_query->the_post();
-                    get_template_part('content-announcement', get_post_format());
+                    get_template_part('partials/content-announcement', get_post_format());
                 endwhile; ?>
             </div>
         </div>
@@ -109,7 +109,7 @@ get_header();
             );
             $custom_query = new WP_Query($args);
             if ( $custom_query->have_posts() ) : while ($custom_query->have_posts()) : $custom_query->the_post();
-                get_template_part( 'content', get_post_format() );
+                get_template_part( 'partials/content', get_post_format() );
             endwhile; endif;
             ?>
         </div>
@@ -135,7 +135,7 @@ get_header();
             );
             $custom_query = new WP_Query($args);
             while ($custom_query->have_posts()) : $custom_query->the_post();
-                get_template_part('content-event', get_post_format());
+                get_template_part('partials/content-event', get_post_format());
             endwhile; ?>
         </div>
     </div>

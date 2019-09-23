@@ -21,7 +21,7 @@ get_header();
         );
         $custom_query = new WP_Query($args);
         if ( $custom_query->have_posts() ) : while ($custom_query->have_posts()) : $custom_query->the_post();
-            get_template_part( 'content-blog-card-large', get_post_format() );
+            get_template_part( 'partials/content-blog-card-large', get_post_format() );
         endwhile; endif;
         ?>
     </div>
