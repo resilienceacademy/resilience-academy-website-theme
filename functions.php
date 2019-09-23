@@ -8,6 +8,9 @@ function resilienceacademy_scripts()
     wp_enqueue_style('reset', get_template_directory_uri() . '/css/reset.css');
     wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css');
     wp_enqueue_style('contact-us', get_template_directory_uri() . '/css/includes/contact-us.css');
+    wp_enqueue_script('jquery');
+    wp_enqueue_script( 'event', get_template_directory_uri() . '/js/mini-event-calendar.min.js', array(), '', true );
+
 }
 
 add_action('wp_enqueue_scripts', 'resilienceacademy_scripts');

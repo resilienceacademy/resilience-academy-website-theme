@@ -1,0 +1,264 @@
+#banner{
+	margin-top: 105px;
+}
+
+#banner .section-wrapper > h2{
+	margin-top: 3em;
+	margin-bottom: 1.6em;
+	text-align: center;
+	font-size: 4em;
+	font-family: "Lato", sans-serif;
+}
+
+#banner .section-wrapper > h2 small{
+	display: block;
+	font-family: "Dosis", sans-serif;
+	font-weight: normal;
+	font-size: 0.6em;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+	color: #000;
+}
+
+#banner .section-wrapper > h2 a{
+	padding-bottom: 0.2em;
+	border-bottom: 5px solid #01a1dd;
+}
+
+#calendarContainer{
+    position: relative;
+	margin-bottom: 7em;
+	background: #ddd;
+}
+
+#banner .image img{
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#banner .image{
+	background: #888;
+}
+
+#calendar{
+    flex-shrink: 0;
+    width: 600px;
+    padding: 2em;
+}
+
+.mini-cal {
+    background: #ddd !important;
+    color: #000 !important;
+}
+
+#calThead{
+    color: #555 !important;
+    font-weight: bold;
+    opacity: 0.5;
+    font-size: 1em !important;
+    margin-top: 1.2em !important;
+    margin-bottom: 0.6em !important;
+}
+
+#calTitle {
+    font-size: 1.3em;
+}
+
+#calTitle button {
+    background: #eee !important;
+}
+
+#calTitle button svg{
+    fill: #555;
+}
+
+#calTbody {
+    color: #555 !important;
+}
+
+#monthYear{
+    color: #555;
+    font-size: 1.25em;
+}
+
+#calTbody .a-date, #calThead>div {
+    font-size: 1.1em !important;
+}
+
+#monthsContainer table{
+	margin: auto;
+	margin-bottom: 8em;
+}
+
+#monthsContainer table td{
+	border: 2px solid #888;
+	font-size: 1.5em;
+	padding: 0.7em 2.5em;
+	text-align: center;
+}
+
+#monthsContainer table td.selected{
+	background: #00a1dd;
+}
+
+#events{
+	margin-top: -1em;
+	margin-bottom: 4em;
+}
+
+#events h2{
+	margin-bottom: 1.2em;
+	text-align: center;
+	font-size: 2.8em;
+	font-family: "Lato", sans-serif;
+}
+
+.event-item{
+	width: 50%;
+	padding: 1em;
+	position: relative;
+}
+
+.event-item > div{
+	min-height: 100%;
+	background: #eee;
+}
+
+.event-item .image{
+	background: #bbb;
+	height: 300px;
+}
+
+.event-item .text{
+	padding: 1.5em;
+}
+
+.event-item small{
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 0.18em;
+	color: #aaa;
+	margin-bottom: 1em;
+	display: block;
+}
+
+.event-item h3{
+	font-family: "Lato";
+	font-size: 1.5em;
+	line-height: 1.35em;
+	margin-bottom: 0.35em;
+}
+
+.event-item p{
+	font-family: "Lato";
+	font-size: 1.2em;
+	line-height: 1.7em;
+	color: #555;
+}
+
+.event-item span{
+	margin-top: auto;
+	letter-spacing: 0.1em;
+}
+
+.event-item .image{
+	background: #bbb;
+}
+
+.event-item .event-date{
+	background: #000;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.event-item .event-date span:first-child{
+	padding: 0.8em 1em;
+	font-size: 1.3em;
+}
+
+.event-item .event-date span:last-child{
+	padding: 0.3em 0.5em;
+	font-size: 3em;
+	font-weight: bold;
+	background: #01a1dd;
+}
+
+#eventsLoader{
+	font-size: 1.4em;
+    text-align: center;
+    display: block;
+    width: 100%;
+    letter-spacing: 0.07em;
+	color: #555;
+	margin-bottom: 2em;
+}
+
+
+@media screen and (max-width: 520px){
+    #banner{
+		margin-top: 0;
+	}
+	
+	#banner .section-wrapper > h2{
+		margin-top: 2.7em;
+		font-size: 2.8em;
+	}
+	
+	#calendarContainer > .layout{
+		flex-direction: column;
+		margin: 0 -20px;
+	}
+	
+	#calendarContainer .image,
+	#calendarContainer #calendar{
+		width: 100vw;
+	}
+
+	#calendarContainer .image{
+		height: 200px;
+		min-height: 0;
+		display: none;
+	}
+	
+	#calendarContainer #calendar{
+		padding: 0;
+	}
+
+	#monthsContainer{
+		display: none;	
+	}
+
+	#calTbody .a-date.blurred{
+		opacity: 0.3 !important;
+	}
+
+	#calTbody .a-date:nth-child(n + 31).blurred{
+		display: none !important;
+	}
+
+	.event-item{
+		width: 100%;
+		/* margin-bottom: 2em; */
+	}
+	
+	.event-item .image{
+		height: 180px;
+	}
+	
+	.event-item .event-date span:first-child{
+		padding: 0.8em 1em;
+		font-size: 1em;
+	}
+	
+	.event-item .event-date span:last-child{
+		padding: 0.3em 0.5em;
+		font-size: 2em;
+		font-weight: bold;
+		background: #01a1dd;
+	}
+}
