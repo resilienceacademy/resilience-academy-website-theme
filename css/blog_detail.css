@@ -1,0 +1,296 @@
+#banner{
+    margin-top: 105px;
+    margin-bottom: 3em;
+}
+
+#banner img{
+    height: calc(100vh - 120px);
+    max-height: 720px;
+}
+
+#content{
+    margin-bottom: 4em;
+}
+
+#content .section-wrapper{
+    max-width: 1200px;
+}
+
+#extraInfo{
+    display: inline-block;
+    flex-shrink: 0;
+    max-width: 300px;
+    margin-right: 2em;
+}
+
+#blogMeta{
+    margin-top: 0.7em;
+}
+
+#blogMeta li{
+    display: block;
+    margin-bottom: 2rem;
+}
+
+#blogMeta li small{
+    display: block;
+    color: #777;
+    font-size: 1rem;
+    letter-spacing: 0.07em;
+    margin-bottom: 0.2rem;
+}
+
+#blogMeta li strong{
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#shareOptions{
+    margin-top: 4em;
+}
+
+#shareOptions li{
+    padding-right: 2em;
+    margin-bottom: 1.5em;
+}
+
+#shareOptions li a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #333;
+}
+
+#shareOptions svg{
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+}
+
+#shareOptions li:last-of-type svg{
+    width: 24px;
+    height: 24px;
+}
+
+#blogBody{
+    max-width: 800px;
+}
+
+#blogBody > h2{
+    font-size: 3.5em;
+    line-height: 1.15em;
+    font-weight: normal;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 0.8rem;
+}
+
+#blogBody > h3{
+    font-size: 1.4em;
+    line-height: 1.4em;
+    font-weight: normal;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1.5rem;
+    color: #444;
+    font-style: italic;
+    letter-spacing: 0.05em;
+}
+
+#blogBody p{
+    max-width: 800px;
+    font-size: 1.25em;
+    line-height: 1.8em;
+    letter-spacing: 0.01em;
+    margin-bottom: 1.1em;
+}
+
+#otherBlogs{
+    margin: 8em 0;
+    padding-top: 5em;
+    padding-bottom: 6em;
+    background: #ddd;
+}
+
+#otherBlogs .section-wrapper{
+    max-width: 1000px;
+    overflow: hidden;
+    padding: 0;
+}
+
+#otherBlogs h2{
+    text-align: center;
+	font-size: 3.8em;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1.25em;
+}
+
+#otherBlogs h2 small{
+	font-family: "Dosis", sans-serif;
+	font-weight: normal;
+	font-size: 2.2em;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-bottom: 0.3em;
+	color: #000;
+}
+
+#otherBlogs h2 a{
+	padding-bottom: 0.2em;
+	border-bottom: 5px solid currentColor;
+}
+
+.blog-item{
+	padding: 0 0.9em;
+    width: 50%;
+    min-width: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.blog-item > div{
+	min-height: 100%;
+	background: #fff;
+}
+
+.blog-item .image{
+	background: #bbb;
+	height: 200px;
+}
+
+.blog-item .text{
+	padding: 1.5em;
+	padding-bottom: 2.25em;
+}
+
+.blog-item small{
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 0.18em;
+	color: #aaa;
+	margin-bottom: 1em;
+	display: block;
+}
+
+.blog-item h3{
+	font-family: "Lato";
+	font-size: 1.5em;
+	line-height: 1.35em;
+	margin-bottom: 0.65em;
+}
+
+.blog-item p{
+	font-family: "Lato";
+	font-size: 1.2em;
+	line-height: 1.7em;
+	margin-bottom: 1.5em;
+	color: #555;
+}
+
+.blog-item span{
+	margin-top: auto;
+	letter-spacing: 0.1em;
+}
+
+@media screen and (max-width: 520px){
+    #banner{
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    
+    #banner img{
+        height: 50vh;
+    }
+
+    #blogBody > h2{
+        font-size: 2.2em;
+        line-height: 1.15em;
+    }
+    
+    #blogBody > h2 + small{
+        font-size: 1.15em;
+        line-height: 1.15em;
+        display: block;
+        margin-bottom: 0.75em;
+    }
+    
+    #blogBody > h3{
+        font-size: 1.2em;
+        line-height: 1.4em;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.5em;
+        color: #333;
+    }
+
+    #shareOptions {
+        margin-top: 2em;
+        padding: 0.8em 0;
+        background: #fff;
+        box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.15);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #shareOptions li{
+        padding-right: 2em;
+        margin-bottom: 0;
+    }
+    
+    #shareOptions span{
+        letter-spacing: 0.1em;
+        font-size: 1.2em;
+        margin-left: -0.4em;
+    }
+    
+    #shareOptions li:first-of-type{
+        padding-left: 2em;
+    }
+
+    #blogItemList{
+		flex-wrap: wrap;
+	}
+
+	.blog-item{
+		width: 100%;
+		padding: 0;
+		margin-bottom: 2em;
+	}
+
+	.blog-item .image{
+		height: 250px;
+	}
+	
+	.blog-item p{
+		display: none;
+	}
+	
+	.blog-item span{
+		margin-top: auto;
+		letter-spacing: 0.1em;
+    }
+    
+    #otherBlogs{
+        margin-bottom: 0;
+        padding: 3em 0;
+    }
+
+    #otherBlogs, #subscribe, footer{
+        position: relative;
+        z-index: 10;
+    }
+
+    #otherBlogs .section-wrapper{
+		padding: 0 20px;
+	}
+    
+    #otherBlogs h2{
+		font-size: 2.2em;
+	}
+	
+	#otherBlogs h2 small{
+		font-size: 1.35em;
+		margin-bottom: 0.5em;
+	}
+}
