@@ -2,7 +2,7 @@
     <div class="section-wrapper layout wrap center justified">
         <h3>Subscribe to our news letter</h3>
         <div class="layout wrap center flex">
-            <input type="text" placeholder="Your email">
+            <input type="text" placeholder="">
             <button class="button">
                 SIGN UP
             </button>

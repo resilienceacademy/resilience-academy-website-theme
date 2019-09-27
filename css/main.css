@@ -5,7 +5,7 @@ body{
 }
 
 body.locked{
-    overflow-y: hidden;
+	overflow-y: hidden;
 }
 
 .blue-text{
@@ -21,12 +21,12 @@ body.locked{
 	background-color: #20d648 !important;
 }
 
-.yellowish-bg{
-	background-color: #f6e912 !important;
-}
-
 .yellow-bg{
 	background-color: #fdd91b !important;
+}
+
+.yellowish-bg{
+	background-color: #f6e912 !important;
 }
 
 .text-italic{
@@ -46,10 +46,10 @@ body.locked{
 }
 
 .button{
-    display: inline-block;
+	display: inline-block;
 	min-width: 350px;
 	max-width: 100%;
-    padding: 1.6rem 3rem;
+	padding: 1.6rem 3rem;
 	background: transparent;
 	border: 3px solid #555;
 	text-align: center;
@@ -59,13 +59,13 @@ body.locked{
 
 .action-button{
 	display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: white;
-    border: none;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: white;
+	border: none;
 	padding: 0;
 	color: #000;
 }
@@ -141,7 +141,7 @@ body.locked{
 }
 
 .overflow-hidden{
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .pointer-events-none{
@@ -154,31 +154,31 @@ body.locked{
 
 /* POSITION HELPERS */
 .position-absolute{
-    position: absolute;
+	position: absolute;
 }
 
 .position-relative{
-    position: relative;
+	position: relative;
 }
 
 .position-fixed{
-    position: fixed;
+	position: fixed;
 }
 
 .pin-top, .pin-all{
-    top: 0;
+	top: 0;
 }
 
 .pin-bottom, .pin-all{
-    bottom: 0;
+	bottom: 0;
 }
 
 .pin-left, .pin-all{
-    left: 0;
+	left: 0;
 }
 
 .pin-right, .pin-all{
-    right: 0;
+	right: 0;
 }
 
 .image{
@@ -205,7 +205,7 @@ header{
 	right: 0;
 	top: 0;
 	bottom: 0;
-    z-index: 90;
+	z-index: 90;
 	background-color: #fff;
 	background-size: cover;
 	background-position: center;
@@ -218,11 +218,11 @@ header:not(.nav-open){
 }
 
 header #logo{
-    z-index: 1;
+	z-index: 1;
 }
 
 header #logo img{
-    height: 60px;
+	height: 60px;
 }
 
 header > div:first-child{
@@ -271,7 +271,7 @@ nav{
 }
 
 nav > ul > li > a{
-    color: #000;
+	color: #000;
 	font-size: 2.4rem;
 	font-family: "Dosis", sans-serif;
 	font-weight: 600;
@@ -287,7 +287,7 @@ nav > ul > li > ul a{
 	font-size: 1.05rem;
 	font-weight: 700;
 	letter-spacing: 0.1em;
-    color: #fff;
+	color: #fff;
 	text-transform: uppercase;
 	padding: 0.8em 0;
 	display: block;
@@ -297,6 +297,62 @@ nav > ul > li > ul a:hover{
 	color: #f6e912;
 }
 
+#contactUsSection{
+	padding: 5em 0;
+}
+
+#contactUsSection h3{
+	font-size: 1.8em;
+	font-family: "Lato", sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-bottom: 0.8em;
+}
+
+#contactUsSection .section-wrapper{
+	max-width: 1200px;
+}
+
+#contactUsForm{
+	width: 60%;
+}
+
+#contactUsForm .form-group{
+	margin-bottom: 1.5em;
+}
+
+#contactUsForm label{
+	display: none;
+}
+
+#contactUsForm input,
+#contactUsForm textarea,
+#contactUsForm .button{
+	width: 100%;
+}
+
+#contactUsForm input,
+#contactUsForm textarea{
+	width: 100%;
+	padding: 1.2rem 1.3rem;
+	background: transparent;
+	border: 3px solid #555;
+	letter-spacing: 0.05rem;
+	font-size: 1.7rem;
+	outline-color: rgba(1, 161, 221, 0.1);
+}
+
+#contactUsForm textarea{
+	resize: none;
+}
+
+#contactUsForm .button{
+	padding: 0.7em 0;
+	font-size: 1.5rem;
+	font-weight: 600;
+	font-family: "Dosis", sans-serif;
+	letter-spacing: 0.18em;
+}
 
 #connect{
 	width: 240px;
@@ -361,15 +417,15 @@ nav > ul > li > ul a:hover{
 }
 
 #subscribe input::-webkit-input-placeholder {
-    color: #444;
+	color: #444;
 }
 
 #subscribe input:-ms-input-placeholder {
-    color: #444;
+	color: #444;
 }
 
 #subscribe input::placeholder {
-    color: #444;
+	color: #444;
 }
 
 footer{
@@ -384,19 +440,19 @@ footer .section-wrapper{
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 521px){
-    .for-mob{
-        display: none;
-    }
+	.for-mob{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 520px){
-    .section-wrapper{
-        padding-left:20px;
-        padding-right:20px;
-    }
+	.section-wrapper{
+		padding-left:20px;
+		padding-right:20px;
+	}
 
-    .for-lg, .for-md{
-        display: none !important;
+	.for-lg, .for-md{
+		display: none !important;
 	}
 
 	.button{
@@ -409,19 +465,19 @@ footer .section-wrapper{
 	header:not(.nav-open){
 		transform: translateY(calc(-100vh + 65px));
 	}
-	
+
 	header #logo img{
 		height: 40px;
 	}
-	
+
 	#logoAndMenuTrigger > div:first-child{
 		height: 65px;
 	}
-	
+
 	#logoAndMenuTrigger button span{
 		display: none;
 	}
-	
+
 	#logoAndMenuTrigger button svg{
 		height: 30px;
 		width: 30px;
@@ -431,7 +487,7 @@ footer .section-wrapper{
 		margin-top: 8vh;
 		padding: 0 1em;
 	}
-	
+
 	nav > ul{
 		margin-top: 0;
 		flex-direction: column;
@@ -445,11 +501,27 @@ footer .section-wrapper{
 		text-align: left;
 		margin-bottom: 1em;
 	}
-	
+
 	nav > ul > li > ul{
 		display: none;
 	}
 
+	#contactUsSection > .section-wrapper > .layout{
+		flex-direction: column-reverse;
+	}
+
+	#contactUsSection #connect{
+		margin-bottom: 3em;
+	}
+
+	#contactUsSection #contactUsForm{
+		width: 100%;
+	}
+
+	#contactUsForm input,
+	#contactUsForm textarea{
+		border-width: 2px;
+	}
 
 	#subscribe h3{
 		font-size: 2em;
@@ -463,7 +535,7 @@ footer .section-wrapper{
 		border-width: 2px;
 		margin-right: 0;
 	}
-	
+
 	#subscribe .button{
 		border-width: 2px;
 		width: 100%;

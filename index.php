@@ -41,10 +41,8 @@ get_header();
         <hr>
 
         <p class="text-center">
-            An initiative led by dedicated faculty of five academic institutions: Ardhi University (Tanzania),
-            University of Dar es Salaam (Tanzania), Sokoine University of Agriculture (Tanzania), State University of Zanzibar (Zanzibar),
-            and University of Turku (Finland)Supported by the Tanzania Urban Resilience Program (TURP), a partnership between the
-            Government of Tanzania, the World Bank, and the UK Department for International Development
+            An initiative led by dedicated faculty of five academic institutions: Ardhi University (Tanzania), University of Dar es Salaam (Tanzania), Sokoine University of Agriculture (Tanzania), State University of Zanzibar (Zanzibar), and University of Turku (Finland)Supported by the Tanzania Urban Resilience Program (TURP),
+            a partnership between the Government of Tanzania, the World Bank, and the UK Department for International Development
         </p>
 
         <div class="layout center-center">
