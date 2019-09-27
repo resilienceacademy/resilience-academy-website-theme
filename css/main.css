@@ -79,7 +79,7 @@ body.locked{
 
 .decorated-inset-box.green-bg,
 .decorated-inset-box.yellow-bg{
-	color: #000;
+	/*color: #000;*/
 }
 
 .decorated-inset-box:before{
