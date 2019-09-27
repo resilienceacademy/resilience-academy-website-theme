@@ -1,6 +1,6 @@
 <section id="subscribe">
     <div class="section-wrapper layout wrap center justified">
-        <h3>Subscribe to our news letter</h3>
+        <h3>Subscribe to our newsletter</h3>
         <div class="layout wrap center flex">
             <input type="text" placeholder="">
             <button class="button">
