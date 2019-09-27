@@ -169,12 +169,12 @@ endwhile; endif;
             <div class="comment-item">
                 <div class="layout center">
                     <div class="dp">
-                        <img class="position-absolute pin-all" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Boys-profile-pics-806.jpg" alt="">
+                        <img class="position-absolute pin-all" src="" alt="">
                     </div>
 
                     <div class="text">
                         <strong>Julius Masika</strong>
-                        The well established fact after years of trial and error is simply that, "No one will commit to this". It's just too expensive.
+                        This is just a sample comment.
                     </div>
                 </div>
             </div>
@@ -182,12 +182,12 @@ endwhile; endif;
             <div class="comment-item">
                 <div class="layout center">
                     <div class="dp">
-                        <img class="position-absolute pin-all" src="https://www.whatsappprofiledpimages.com/wp-content/uploads/2019/01/Stylish-Girls-Whatsapp-DP-Profile-Images-3.jpg" alt="">
+                        <img class="position-absolute pin-all" src="" alt="">
                     </div>
 
                     <div class="text">
                         <strong>Antanelle Shizda</strong>
-                        😄😄 Dude!!!! Cynical much?
+                        This is another sample comment
                     </div>
                 </div>
             </div>
