@@ -92,7 +92,7 @@ get_header();
             <h1 class="section-subtitle text-center">OUR METHODS</h1>
             <div id="methodTabList">
                 <div class="layout center">
-                    <a href="#" onclick="moveMethodsTo(event, 0)" class="active method-tab flex text-center">1. DIGITAL</a>
+                    <a href="#" onclick="moveMethodsTo(event, 0)" class="active method-tab flex text-center">1. TOOLS</a>
                     <a href="#" onclick="moveMethodsTo(event, 1)" class="method-tab flex text-center">2. SKILLS</a>
                     <a href="#" onclick="moveMethodsTo(event, 2)" class="method-tab flex text-center">3. ACTION</a>
                     <a href="#" onclick="moveMethodsTo(event, 3)" class="method-tab flex text-center">4. UNDERSTANDING</a>
