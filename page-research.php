@@ -8,8 +8,7 @@ get_header();
     <div class="section-wrapper">
         <h2>
             <small>RESEARCH</small>
-            We beleive resilient cities can <span class="for-lg"><br/></span>
-            be achieved through research <span class="for-lg"><br/></span>
+            Resilient cities can be achieved through research <span class="for-lg"><br/></span>
             and collaboration.
             <span class="text-italic">
                 Want to get involved?
