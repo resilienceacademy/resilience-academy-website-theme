@@ -12,7 +12,7 @@ get_header();
         </h2>
 
         <div class="image">
-            <img src="https://images.unsplash.com/photo-1532251632967-758f04b1c338?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+            <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/08/DSC03252.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
         </div>
 
         <div id="whyResilience" class="layout">
@@ -35,7 +35,7 @@ get_header();
             </div>
 
             <div class="image">
-                <img src="https://images.unsplash.com/photo-1554208396-10c024d76fc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/RA.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
             </div>
         </div>
     </div>
@@ -45,27 +45,13 @@ get_header();
     <div class="section-wrapper">
         <div>
             <h2>The Resilience Academy</h2>
-            <p>
-                We equip young people with the
-                <span class="text-italic">tools, knowledge, and skills </span>
-                to address the world’s most pressing urban challenges and
-                <span class="text-italic">ensure resilient urban development</span>.
-            </p>
-
-            <p>
-                An initiative led by dedicated faculty of five academic institutions: Ardhi University (Tanzania),
-                University of Dar es Salaam (Tanzania), Sokoine University of Agriculture (Tanzania), State University of Zanzibar (Zanzibar),
-                and University of Turku (Finland)Supported by the Tanzania Urban Resilience Program (TURP), a partnership between the
-                Government of Tanzania, the World Bank, and the UK Department for International Development
-            </p>
-
             <div id="moreAbout" class="layout center-justified wrap">
                 <div>
                     <div class="decorated-inset-box blue-bg">
                         <div>
-                            <h3>Team</h3>
-                            <p>Get to know us</p>
-                            <a href="#" class="button">
+                            <h3>Courses</h3>
+                            <p>Open access education and training materials</p>
+                            <a href="<?php echo get_home_url(); ?>/courses" class="button">
                                 Learn More
                             </a>
                         </div>
@@ -75,9 +61,9 @@ get_header();
                 <div>
                     <div class="decorated-inset-box green-bg">
                         <div>
-                            <h3>Institutions</h3>
-                            <p>Meet our members</p>
-                            <a href="#" class="button">
+                            <h3>Data</h3>
+                            <p>A geodatabase of climate risk information</p>
+                            <a href="<?php echo get_home_url(); ?>/data" class="button">
                                 Learn More
                             </a>
                         </div>
@@ -87,9 +73,9 @@ get_header();
                 <div>
                     <div class="decorated-inset-box yellow-bg">
                         <div>
-                            <h3>Partners</h3>
-                            <p>Meet our partners</p>
-                            <a href="#" class="button">
+                            <h3>Research</h3>
+                            <p>A repository of research and opportunities for exchange</p>
+                            <a href="<?php echo get_home_url(); ?>/data" class="button">
                                 Learn More
                             </a>
                         </div>
@@ -122,7 +108,7 @@ get_header();
                     </h2>
 
                     <div class="image">
-                        <img src="https://images.unsplash.com/photo-1436918671239-a2b72ace4880?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/compressed-frontpage-image-300x200.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
                     </div>
                 </div>
                 <div class="method-item layout">
@@ -133,7 +119,7 @@ get_header();
                     </h2>
 
                     <div class="image">
-                        <img src="https://images.unsplash.com/photo-1436918671239-a2b72ace4880?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/events-section-300x200.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
                     </div>
                 </div>
                 <div class="method-item layout">
@@ -144,7 +130,7 @@ get_header();
                     </h2>
 
                     <div class="image">
-                        <img src="https://images.unsplash.com/photo-1436918671239-a2b72ace4880?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/img-20180915-wa0137_31154750538_o-300x200.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
                     </div>
                 </div>
                 <div class="method-item layout">
@@ -155,7 +141,7 @@ get_header();
                     </h2>
 
                     <div class="image">
-                        <img src="https://images.unsplash.com/photo-1436918671239-a2b72ace4880?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/07/R0002848-Copy-300x213.png?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
                     </div>
                 </div>
                 <div class="method-item layout">
@@ -166,7 +152,7 @@ get_header();
                     </h2>
 
                     <div class="image">
-                        <img src="https://images.unsplash.com/photo-1436918671239-a2b72ace4880?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/susteinability-1-300x200.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
                     </div>
                 </div>
             </div>
