@@ -115,7 +115,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 endwhile; endif;
 ?>
 <section id="otherBlogs">
-    <h2>Show me <a href="#" class="blue-text">more.</a></h2>
+    <h2>Show me <a href="<?php echo get_home_url(); ?>/blogs" class="blue-text">more.</a></h2>
     <div class="section-wrapper">
         <div class="overflow-hidden">
             <div id="blogItemList" class="layout">
