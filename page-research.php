@@ -27,7 +27,7 @@ get_header();
     <div class="section-wrapper">
         <div class="info-item">
             <div class="image">
-                <img src="https://images.unsplash.com/photo-1478707734876-10bbf5b7a44b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="">
+                <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/MG_5389-Copy.png?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="">
             </div>
 
             <div class="position-absolute pin-top pin-left">
@@ -47,7 +47,7 @@ get_header();
 
         <div class="info-item">
             <div class="image">
-                <img src="https://images.unsplash.com/photo-1566570144806-33f096699a57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/newimg.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
             </div>
 
             <div class="position-absolute pin-top pin-left">
@@ -70,7 +70,7 @@ get_header();
 
         <div class="info-item">
             <div class="image">
-                <img src="https://images.unsplash.com/photo-1519756301029-33fef7098ba4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" alt="">
+                <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/homapage.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" alt="">
             </div>
 
             <div class="position-absolute pin-top pin-left">
