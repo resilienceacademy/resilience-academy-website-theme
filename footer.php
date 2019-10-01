@@ -1,14 +1,4 @@
-<section id="subscribe">
-    <div class="section-wrapper layout wrap center justified">
-        <h3>Subscribe to our newsletter</h3>
-        <div class="layout wrap center flex">
-            <input type="text" placeholder="">
-            <button class="button">
-                SIGN UP
-            </button>
-        </div>
-    </div>
-</section>
+<?php get_template_part( 'includes/subscribe-form' ); ?>
 
 <script>
     var projectsScroller = document.querySelector("#projectsScroller");
