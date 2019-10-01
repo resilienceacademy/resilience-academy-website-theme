@@ -145,3 +145,21 @@ function create_events_post()
 }
 
 add_action('init', 'create_events_post');
+
+
+function prefix_send_email_to_admin() {
+    /**
+     * At this point, $_GET/$_POST variable are available
+     *
+     * We can do our normal processing here
+     */
+
+    $email = $_POST['email'];
+
+    // Sanitize the POST field
+    // Generate email content
+    // Send to appropriate email
+}
+
+add_action( 'admin_post_nopriv_subscribe_form', 'prefix_send_email_to_admin' );
+add_action( 'admin_post_subscribe_form', 'prefix_send_email_to_admin' );
