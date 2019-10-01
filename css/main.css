@@ -588,3 +588,17 @@ footer .section-wrapper{
 #subscribe .emaillist form label:first-child {
 	color: #278fbe;
 }
+
+#subscribe .emaillist form span.es_subscription_message.success {
+	padding-top: 20px;
+	border-radius: 20px;
+	font-size: 1.5em;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	bottom: -35px;
+	right: 147px;
+	height: 100px;
+	width: 1093px;
+	background-color: #2286b3;
+}
