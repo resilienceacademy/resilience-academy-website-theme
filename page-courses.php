@@ -55,32 +55,24 @@ get_header();
                 <div class="banner-item">
                     <h2 class="layout start">
                         <strong>2</strong>
-                        Quick Study<br>
-                        for Data Viz
+                        Flood Resilience<br>
+                        in a Changing Climate
                     </h2>
 
                     <div class="module-items layout wrap">
                         <a href="#" class="module-item">
                             <div>
-                                <h3>Module 1</h3>
+                                <h3>Module 4</h3>
                                 <p>
-                                    Geonode installation, tailoring and maintainance
+                                Flood mapping, modelling, and predictions
                                 </p>
                             </div>
                         </a>
                         <a href="#" class="module-item">
                             <div>
-                                <h3>Module 2</h3>
+                                <h3>Module 5</h3>
                                 <p>
-                                    Geospatial data quality, data management and sharing via Genocode
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" class="module-item">
-                            <div>
-                                <h3>Module 3</h3>
-                                <p>
-                                    Data visualization for resilience
+                                Climate change and resilience impacts
                                 </p>
                             </div>
                         </a>
@@ -89,32 +81,24 @@ get_header();
                 <div class="banner-item">
                     <h2 class="layout start">
                         <strong>3</strong>
-                        Resilience Data<br>
-                        for Open
+                        Community Mapping<br>
+                        for Improved Spatial Planning
                     </h2>
 
                     <div class="module-items layout wrap">
                         <a href="#" class="module-item">
                             <div>
-                                <h3>Module 1</h3>
+                                <h3>Module 6</h3>
                                 <p>
-                                    Geonode installation, tailoring and maintainance
+                                Participatory/Community mapping methods and geospatial tools in spatial planning
                                 </p>
                             </div>
                         </a>
                         <a href="#" class="module-item">
                             <div>
-                                <h3>Module 2</h3>
+                                <h3>Module 7</h3>
                                 <p>
-                                    Geospatial data quality, data management and sharing via Genocode
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" class="module-item">
-                            <div>
-                                <h3>Module 3</h3>
-                                <p>
-                                    Data visualization for resilience
+                                Ramani Huria community mapping practice
                                 </p>
                             </div>
                         </a>
@@ -123,32 +107,16 @@ get_header();
                 <div class="banner-item">
                     <h2 class="layout start">
                         <strong>4</strong>
-                        Data Viz<br>
-                        for Study
+                        Earth Observation<br>
+                        for Resilience
                     </h2>
 
                     <div class="module-items layout wrap">
                         <a href="#" class="module-item">
                             <div>
-                                <h3>Module 1</h3>
+                                <h3>Module 8</h3>
                                 <p>
-                                    Geonode installation, tailoring and maintainance
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" class="module-item">
-                            <div>
-                                <h3>Module 2</h3>
-                                <p>
-                                    Geospatial data quality, data management and sharing via Genocode
-                                </p>
-                            </div>
-                        </a>
-                        <a href="#" class="module-item">
-                            <div>
-                                <h3>Module 3</h3>
-                                <p>
-                                    Data visualization for resilience
+                                ML and AI methods in satellite and drone image processing and mapping for exposure, hazards and risks
                                 </p>
                             </div>
                         </a>
@@ -195,19 +163,19 @@ get_header();
                 <div class="course-section-details">
                     <div>
                         <strong>COURSE DATE</strong>
-                        Oct 17, 2019
+                        <!-- Oct 17, 2019 -->
                     </div>
                     <div>
                         <strong>LECTURER</strong>
-                        Dr. Jamison Penques
+                        <!-- Dr. Jamison Penques -->
                     </div>
                     <div>
                         <strong>TIME</strong>
-                        08:00 AM - 12:30 PM
+                        <!-- 08:00 AM - 12:30 PM -->
                     </div>
                 </div>
                 <div class="image flex">
-                    <img src="https://images.unsplash.com/photo-1504807959081-3dafd3871909?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80" alt="">
+                    <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/about-page-digital-opt.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -215,13 +183,10 @@ get_header();
         <div class="course-section-about">
             <h3>ABOUT</h3>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quibusdam est velit sed asperiores iste exercitationem deleniti quae tempore doloribus omnis mollitia corrupti, nisi cupiditate pariatur, adipisci esse, culpa iusto.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quibusdam est velit sed asperiores iste exercitationem deleniti
-            </p>
-            <p>
-                Quae tempore doloribus omnis mollitia corrupti, nisi cupiditate pariatur, adipisci esse, culpa iusto.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quibusdam est velit sed asperiores iste exercitationem deleniti quae tempore doloribus omnis mollitia corrupti, nisi cupiditate pariatur, adipisci esse, culpa iusto.
-            </p>
+            Training to provide knowledge and practical experiences on Climate Risk Databases (CRD) using Geonode
+            on installations (programming languages) and front-end tailoring to the Tanzanians University experts in IT.
+             </p>
+           
         </div>
     </div>
 </section>
@@ -238,7 +203,7 @@ get_header();
 
             <div class="course-module">
                 <h3 class="layout">
-                    <strong>MODULE 1</strong>
+                    <strong>MODULE 2</strong>
                     <span>
                         Geospatial Data Quality,
                         Data and Management And
@@ -253,19 +218,19 @@ get_header();
                 <div class="course-section-details">
                     <div>
                         <strong>COURSE DATE</strong>
-                        Oct 17, 2019
+                        <!-- Oct 17, 2019 -->
                     </div>
                     <div>
                         <strong>LECTURER</strong>
-                        Dr. Jamison Penques
+                        <!-- Dr. Jamison Penques -->
                     </div>
                     <div>
                         <strong>TIME</strong>
-                        08:00 AM - 12:30 PM
+                        <!-- 08:00 AM - 12:30 PM -->
                     </div>
                 </div>
                 <div class="image flex">
-                    <img src="https://images.unsplash.com/photo-1474628687204-f02100043011?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                    <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/Msimbazi-tour-rushes.11_05_50_11.Still002.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -273,13 +238,9 @@ get_header();
         <div class="course-section-about">
             <h3>ABOUT</h3>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quibusdam est velit sed asperiores iste exercitationem deleniti quae tempore doloribus omnis mollitia corrupti, nisi cupiditate pariatur, adipisci esse, culpa iusto.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quibusdam est velit sed asperiores iste exercitationem deleniti
+            Training on principals, critical skills and good practice of geospatial data management and dissemination including data description, maintenance, updating, quality assessment and data sharing through an SDI, Geonode.
             </p>
-            <p>
-                Quae tempore doloribus omnis mollitia corrupti, nisi cupiditate pariatur, adipisci esse, culpa iusto.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quibusdam est velit sed asperiores iste exercitationem deleniti quae tempore doloribus omnis mollitia corrupti, nisi cupiditate pariatur, adipisci esse, culpa iusto.
-            </p>
+            
         </div>
     </div>
 </section>
@@ -296,7 +257,7 @@ get_header();
 
             <div class="course-module">
                 <h3 class="layout">
-                    <strong>MODULE 1</strong>
+                    <strong>MODULE 3</strong>
                     <span>
                         Data Visualization For Resilience
                     </span>
@@ -309,19 +270,19 @@ get_header();
                 <div class="course-section-details">
                     <div>
                         <strong>COURSE DATE</strong>
-                        Oct 17, 2019
+                        <!-- Oct 17, 2019 -->
                     </div>
                     <div>
                         <strong>LECTURER</strong>
-                        Dr. Jamison Penques
+                        <!-- Dr. Jamison Penques -->
                     </div>
                     <div>
                         <strong>TIME</strong>
-                        08:00 AM - 12:30 PM
+                        <!-- 08:00 AM - 12:30 PM -->
                     </div>
                 </div>
                 <div class="image flex">
-                    <img src="https://images.unsplash.com/photo-1478095062770-b2e8f2af3ed1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                    <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/Msimbazi-tour-rushes.11_05_50_11.Still002.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -329,13 +290,10 @@ get_header();
         <div class="course-section-about">
             <h3>ABOUT</h3>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quibusdam est velit sed asperiores iste exercitationem deleniti quae tempore doloribus omnis mollitia corrupti, nisi cupiditate pariatur, adipisci esse, culpa iusto.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quibusdam est velit sed asperiores iste exercitationem deleniti
-            </p>
-            <p>
-                Quae tempore doloribus omnis mollitia corrupti, nisi cupiditate pariatur, adipisci esse, culpa iusto.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quibusdam est velit sed asperiores iste exercitationem deleniti quae tempore doloribus omnis mollitia corrupti, nisi cupiditate pariatur, adipisci esse, culpa iusto.
-            </p>
+            With open access to various digital data repositories combined with innovative methods to visualize geospatial data. 
+            Students learn the principles and practical skills of geospatial data visualization through an (Urban)
+             Resilience Visualization Challenge based on real visualization needs coming from the actors.
+             </p>
         </div>
     </div>
 </section>
