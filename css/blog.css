@@ -55,7 +55,7 @@ body{
 }
 
 .blog-item .text{
-	padding: 3em;
+	padding: 3.5em;
 	background: #fff;
 	position: absolute;
 	top: 0;
@@ -66,28 +66,28 @@ body{
 .blog-item .text strong{
 	display: block;
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 1.4em;
 	color: #999;
 	margin-bottom: 0.3em;
 	letter-spacing: 0.06em;
 }
 
 .blog-item .text h2{
-	font-size: 1.6em;
+	font-size: 3.6em;
 	line-height: 1.3em;
 	margin-bottom: 0.2em;
 }
 
 .blog-item .text p{
-	font-size: 1em;
+	font-size: 1.4em;
 	line-height: 1.7em;
-	margin-bottom: 1em;
+	margin-bottom: 1.3em;
 	letter-spacing: 0.01rem;
 	color: #333;
 }
 
 .blog-item .text a{
-	font-size: 1em;
+	font-size: 1.3em;
 	letter-spacing: 0.03em;
 	color: #01a1dd;
 }
