@@ -1,3 +1,6 @@
+
+
+<?php get_template_part( 'includes/contact-us' ); ?>
 <?php get_template_part( 'includes/subscribe-form' ); ?>
 
 <script>

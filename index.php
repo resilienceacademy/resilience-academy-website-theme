@@ -150,6 +150,6 @@ get_header();
         </a>
     </div>
 </section>
-<?php get_template_part( 'includes/contact-us' ); ?>
+
 
 <?php get_footer(); ?>
