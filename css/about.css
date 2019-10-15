@@ -79,6 +79,8 @@
 	position: relative;
 }
 
+
+
 #aboutResilience:before{
 	content: '';
 	position: absolute;
@@ -125,6 +127,60 @@
 	max-width: 1200px;
 	margin: auto;
 }
+
+
+#ourCommunity{
+	position: relative;
+}
+
+
+
+#ourCommunity:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #f4f4f4;
+	background-size: 600px;
+	filter: blur(2px);
+}
+
+#ourCommunity .section-wrapper > div{
+	padding: 6.5em 5em;
+	background-color: #f4f4f4;
+}
+
+#ourCommunity .section-wrapper > div > h2{
+	margin-bottom: 0.6em;
+	text-align: center;
+	font-size: 4em;
+	font-family: "Lato", sans-serif;
+	color: #000000;
+}
+
+#ourCommunity .section-wrapper > div > p:first-of-type{
+	font-size: 2.8em;
+	font-weight: bold;
+	line-height: 1.4em;
+	text-align: center;
+	max-width: 1000px;
+	margin: auto;
+	margin-bottom: 1em;
+}
+
+#ourCommunity .section-wrapper > div > p:first-of-type span{
+	color: #fff;
+}
+
+#ourCommunity .section-wrapper > div > p:last-of-type{
+	font-size: 1.55em;
+	line-height: 1.8em;
+	max-width: 1200px;
+	margin: auto;
+}
+
 
 #moreAbout{
 	margin-top: 3em;
@@ -290,6 +346,38 @@
 	}
 
 	#aboutResilience .section-wrapper > div > p:last-of-type{
+		font-size: 1.35em;
+		line-height: 1.8em;
+		color: #173a47;
+	}
+
+
+	#ourCommunity{
+		background-color: #F7F9F2;
+	}
+
+	#ourCommunity:before{
+		display: none;
+	}
+
+	#ourCommunity .section-wrapper > div{
+		padding: 4em 0;
+	}
+
+	#ourCommunity .se	ction-wrapper > div > h2{
+		font-size: 2.55em;
+		line-height: 1.3em;
+		text-align: left;
+
+	}
+
+	#ourCommunity .section-wrapper > div > p:first-of-type{
+		text-align: left;
+		font-size: 1.8em;
+		font-weight: normal;
+	}
+
+	#ourCommunity .section-wrapper > div > p:last-of-type{
 		font-size: 1.35em;
 		line-height: 1.8em;
 		color: #173a47;
