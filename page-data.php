@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <section id="banner">
-    <img src="https://images.unsplash.com/photo-1446776899648-aa78eefe8ed0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80" alt="">
+    <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/component.png?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80" alt="">
 </section>
 
 <section id="about">
