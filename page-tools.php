@@ -29,7 +29,7 @@ get_header();
                 </div>
                 <div>
                     <div class="image flex">
-                        <img src="https://images.unsplash.com/photo-1551901651-05e54fa40d93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/Screen-Shot-2018-06-04-at-17.22.21-Copy.png?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
                     </div>
                     <div class="for-mob tool-info">
                         <div class="blue-bg">
@@ -67,7 +67,7 @@ get_header();
                 </div>
                 <div>
                     <div class="image flex">
-                        <img src="https://images.unsplash.com/photo-1521405924368-64c5b84bec60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" alt="">
+                        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/MG_5389-Copy.png?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" alt="">
                     </div>
                     <div class="for-mob tool-info">
                         <div class="yellowish-bg">
@@ -94,7 +94,7 @@ get_header();
         <h2>DATA</h2>
         <div class="data-item layout">
             <div class="image">
-                <img src="https://images.unsplash.com/photo-1546790971-8888748e8054?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/10/Screenshot-from-2019-10-16-19-24-38.png?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
             </div>
             <div class="flex decorated-inset-box green-bg">
                 <div>
