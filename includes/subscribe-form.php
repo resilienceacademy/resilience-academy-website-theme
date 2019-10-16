@@ -2,10 +2,6 @@
 <section id="subscribe">
     <div class="section-wrapper layout wrap center justified">
         <h3 id="subscribe-heading">Subscribe to our newsletter</h3>
-        <?php es_subbox( $namefield =  "NO", $desc = "", $group = "" );  ?>
+        <?php echo do_shortcode( '[email-subscribers-form id="1"]' ); ?>
     </div>
 </section>
-<script>
-    const submitButton = document.getElementsByClassName('es_subscription_form_submit')[0];
-    submitButton.value = 'SIGN UP';
-</script>
