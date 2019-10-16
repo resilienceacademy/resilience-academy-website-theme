@@ -602,3 +602,23 @@ footer .section-wrapper{
 	width: 1093px;
 	background-color: #2286b3;
 }
+
+#contactUs label {
+	display: inline;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+#contactUs input, #contactUs textarea {
+	width: 100%;
+	padding: 1.2rem 1.3rem;
+	background: transparent;
+	border: 3px solid #555;
+	letter-spacing: 0.05rem;
+	font-size: 1.7rem;
+	outline-color: rgba(1, 161, 221, 0.1);
+}
+
+#contactUs form p {
+	margin-bottom: 1.5em;
+}

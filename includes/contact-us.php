@@ -2,7 +2,8 @@
 <section id="contactUsSection">
     <div class="section-wrapper">
         <div class="layout start justified">
-            <div>
+            <div id="contactUs">
+                <h3>Have a question?</h3>
                 <?php echo do_shortcode( '[contact-form-7 id="101" title="Contact form 1"]' ); ?>
             </div>
 
