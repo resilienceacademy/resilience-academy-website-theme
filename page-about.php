@@ -102,9 +102,7 @@ get_header();
             <div id="methodsScroller" class="layout center">
                 <div class="method-item layout">
                     <h2>
-                        Using digital tools which are open,
-                        affordable and locally attainable to
-                        collect risk information.
+                        Using digital tools which are open, affordable and locally attainable to collect risk information.
                     </h2>
 
                     <div class="image">
@@ -113,9 +111,7 @@ get_header();
                 </div>
                 <div class="method-item layout">
                     <h2>
-                        Using available skillsets which are open,
-                        affordable and locally attainable to
-                        collect risk information.
+                        Training the next generation of experts in urban risks identification, planning, and management.
                     </h2>
 
                     <div class="image">
@@ -124,9 +120,7 @@ get_header();
                 </div>
                 <div class="method-item layout">
                     <h2>
-                        Make prompt action for tools which are open,
-                        affordable and locally attainable to
-                        collect risk information.
+                        Fostering strong partnerships between institutions, practitioners, and the local community for collective action
                     </h2>
 
                     <div class="image">
@@ -135,9 +129,7 @@ get_header();
                 </div>
                 <div class="method-item layout">
                     <h2>
-                        Create acute understanding of tools which are open,
-                        affordable and locally attainable to
-                        collect risk information.
+                        Improving understanding of the extent, exposure, and vulnerability related to flood risk
                     </h2>
 
                     <div class="image">
@@ -146,9 +138,7 @@ get_header();
                 </div>
                 <div class="method-item layout">
                     <h2>
-                        Ensure long term sustainability using tools which are open,
-                        affordable and locally attainable to
-                        collect risk information.
+                        Prioritizes sustainability and human safety within all interventions of urban development
                     </h2>
 
                     <div class="image">
