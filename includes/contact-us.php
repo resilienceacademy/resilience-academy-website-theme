@@ -2,26 +2,8 @@
 <section id="contactUsSection">
     <div class="section-wrapper">
         <div class="layout start justified">
-            <div id="contactUsForm">
-                <h3>Have a question?</h3>
-                <form action="">
-                    <div class="form-group">
-                        <label>Name</label>
-                        <input placeholder="Name" type="email" name="your-email" value="" aria-required="true" aria-invalid="false" />
-                    </div>
-
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input placeholder="Email Address" type="email" name="your-email" value="" aria-required="true" aria-invalid="false" />
-                    </div>
-
-                    <div class="form-group">
-                        <label> Your Message</label>
-                        <textarea placeholder="Your Message" name="your-message" cols="40" rows="5" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea>
-                    </div>
-
-                    <button type="submit" class="button text-upper">Send Message</button>
-                </form>
+            <div>
+                <?php echo do_shortcode( '[contact-form-7 id="101" title="Contact form 1"]' ); ?>
             </div>
 
             <div id="connect">
