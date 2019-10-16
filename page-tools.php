@@ -108,7 +108,6 @@ get_header();
     </div>
 </section>
 
-<?php get_template_part( 'includes/contact-us' ); ?>
 <?php get_footer(); ?>
 
 
