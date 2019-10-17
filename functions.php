@@ -77,6 +77,21 @@ function setting_facebook()
 <?php }
 
 
+// Contact us shortcode
+function setting_contactus()
+{ ?>
+    <input type="text" name="contactus" id="contactus" value="<?php echo get_option('contactus'); ?>"/>
+<?php }
+
+// Subscribe shortcode
+function setting_subscribe()
+{ ?>
+    <input type="text" name="subscribe" id="subscribe" value="<?php echo get_option('subscribe'); ?>"/>
+<?php }
+
+/**
+ * Global settings for the theme
+*/
 function custom_settings_page_setup()
 {
     add_settings_section('section', 'All Settings', null, 'theme-options');
@@ -90,9 +105,17 @@ function custom_settings_page_setup()
     add_settings_field('facebook', 'Facebook URL', 'setting_facebook', 'theme-options', 'section');
     register_setting('section', 'facebook');
 
+    add_settings_field('contactus', 'Shortcode for contact us plugin', 'setting_contactus', 'theme-options', 'section');
+    register_setting('section', 'contactus');
+    add_settings_field('subscribe', 'Shortcode for email subscription plugin', 'setting_subscribe', 'theme-options', 'section');
+    register_setting('section', 'subscribe');
+
 }
 
 add_action('admin_init', 'custom_settings_page_setup');
+
+
+
 
 
 // Support Featured Images
