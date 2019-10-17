@@ -1,0 +1,47 @@
+
+#repository {
+    background-image: url(https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/Background-Blue.png);
+    margin-top: 105px;
+        padding: 100px 200px 100px 200px;
+}
+
+#repository .articles-content {
+    background-color: #ffffff;
+    padding: 50px;
+}
+
+#repository h2 {
+    color: #ffffff;
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#repository  table {
+    border: 3px solid #eee;
+}
+
+#repository table tr {
+    border: 1px solid #eee;
+}
+
+#repository table tfoot {
+    display: none;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+
+    .gform_wrapper .gform_body .top_label li.gfield.gf_right_half {
+        float: left;
+        clear: left !important;
+        width: 99%;
+    }
+
+    .gform_wrapper .gform_body .top_label li.gfield.gf_left_half {
+        float: left;
+        clear: left !important;
+        width: 99%;
+    }
+
+}
