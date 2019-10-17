@@ -145,7 +145,7 @@ get_header();
             Accurate climate risk data informs <span class="for-lg"><br/></span>
             resilient decision-making
         </h3>
-        <a href="<?php echo get_home_url(); ?>/research" class="button text-upper">
+        <a href="<?php echo get_home_url(); ?>/repository" class="button text-upper">
             View Our Repository
         </a>
     </div>
