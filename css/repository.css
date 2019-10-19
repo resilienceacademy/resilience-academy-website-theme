@@ -1,6 +1,6 @@
 
 #repository {
-    background-image: url(https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/Background-Blue.png);
+    background-image: url(../img/Background-Blue.png);
     margin-top: 105px;
         padding: 100px 200px 100px 200px;
 }
@@ -12,9 +12,9 @@
 
 #repository h2 {
     color: #ffffff;
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
 }
 
 #repository  table {

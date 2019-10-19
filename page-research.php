@@ -18,7 +18,7 @@ get_header();
         <div class="layout center-center">
             <a href="#" class="button">SHARE YOUR RESEARCH</a>
             <span class="for-lg" style="width: 50px"></span>
-            <a href="#" class="button">VIEW OUR REPOSITORY</a>
+            <a href="<?php echo esc_url( __( 'http://localhost/repository', 'repository' ) ); ?>" class="button">VIEW OUR REPOSITORY</a>
         </div>
     </div>
 </section>
