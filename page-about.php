@@ -169,7 +169,7 @@ get_header();
                         <div>
                             <h3>Team</h3>
                             <p>Get to know us</p>
-                            <a href="#" class="button">
+                            <a href="<?php echo get_home_url(); ?>/team" class="button">
                                 Learn More
                             </a>
                         </div>
