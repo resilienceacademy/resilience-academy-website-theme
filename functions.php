@@ -89,6 +89,12 @@ function setting_subscribe()
     <input type="text" name="subscribe" id="subscribe" value="<?php echo get_option('subscribe'); ?>"/>
 <?php }
 
+// Submitted articles view  shortcode
+function setting_articles()
+{ ?>
+    <input type="text" name="articles" id="articles" value="<?php echo get_option('articles'); ?>"/>
+<?php }
+
 /**
  * Global settings for the theme
 */
@@ -109,6 +115,8 @@ function custom_settings_page_setup()
     register_setting('section', 'contactus');
     add_settings_field('subscribe', 'Shortcode for email subscription plugin', 'setting_subscribe', 'theme-options', 'section');
     register_setting('section', 'subscribe');
+    add_settings_field('articles', 'Shortcode for submitted articles view plugin', 'setting_articles', 'theme-options', 'section');
+    register_setting('section', 'articles');
 
 }
 
