@@ -178,6 +178,30 @@ function create_events_post()
 add_action('init', 'create_events_post');
 
 
+// Team Post Type
+function create_team_post()
+{
+    register_post_type('team',
+        array(
+            'labels' => array(
+                'name' => __('Team'),
+                'singular_name' => __('Team'),
+            ),
+            'public' => true,
+            'menu_icon' => 'dashicons-groups',
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail',
+                'custom-fields'
+            )
+        ));
+}
+
+add_action('init', 'create_team_post');
+
+
 function prefix_send_email_to_admin() {
     /**
      * At this point, $_GET/$_POST variable are available
