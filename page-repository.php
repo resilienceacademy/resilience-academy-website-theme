@@ -5,7 +5,7 @@ get_header();
 <section id="repository">
     <h2>Research Repository</h2>
     <div class="articles-content">
-    <?php echo do_shortcode('[gravityview id=15881]'); ?>
+    <?php echo do_shortcode(get_option('articles')); ?>
     </div>
 </section>
 
