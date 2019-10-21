@@ -4,13 +4,6 @@ get_header();
 ?>
 <section id="repository">
     <h2>Research Repository</h2>
-    <!-- <?php
-    if ( have_posts() ) : while ( have_posts() ) : the_post();
-
-        get_template_part( 'partials/content-article', get_post_format() );
-
-    endwhile; endif;
-    ?> -->
     <div class="articles-content">
     <?php echo do_shortcode('[gravityview id=15881]'); ?>
     </div>

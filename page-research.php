@@ -16,7 +16,7 @@ get_header();
         </h2>
 
         <div class="layout center-center">
-            <a href="#" class="button">SHARE YOUR RESEARCH</a>
+        <a href="<?php echo esc_url( __( '/form', 'repository' ) ); ?>" class="button">SHARE YOUR RESEARCH</a>
             <span class="for-lg" style="width: 50px"></span>
             <a href="<?php echo esc_url( __( '/repository', 'repository' ) ); ?>" class="button">VIEW OUR REPOSITORY</a>
         </div>
