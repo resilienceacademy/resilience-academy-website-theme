@@ -4,7 +4,7 @@ get_header();
 
 ?>
     <section id="banner">
-        <img src="https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/about-team.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
         <div class="position-absolute pin-all text layout center-center">
             <h2>
                 Our local team is made up of dedicated and brilliant problem solvers.
