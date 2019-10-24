@@ -1,8 +1,6 @@
 
 #repository {
     background-image: url(../img/Background-Blue.png);
-    margin-top: 105px;
-        padding: 100px 200px 100px 200px;
 }
 
 #repository .articles-content {
@@ -12,7 +10,6 @@
 
 #repository h2 {
     color: #ffffff;
-    font-size: 5em;
     text-align: center;
     padding-bottom: 35px;
 }
@@ -44,4 +41,31 @@
         width: 99%;
     }
 
+}
+
+@media screen and (min-width: 767px){
+    #repository {
+        padding: 250px 200px 250px 200px;
+        margin-top: 105px;
+
+    }
+    
+    #repository h2 {
+        font-size: 5em;
+
+    } 
+}
+
+@media screen and (max-width: 768px){
+    #repository {
+        padding: 50px 0px 50px 0px;
+        margin-top: 65px;
+    }
+    #repository h2 {
+        font-size: 2em;
+    } 
+    #repository .articles-content {
+        width: 90%;
+        margin-left: 20px;
+    }
 }

@@ -1,12 +1,19 @@
-<?php get_header(); ?>
-<section style="margin-top: 10%">
-    <?php
-    if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-        get_template_part( 'partials/content-feed', get_post_format() );
+<?php
+wp_enqueue_style('form', get_template_directory_uri() . '/css/form.css');
+get_header();
+?>
 
-    endwhile; endif;
-    ?>
+<section id="form">
+<h2>Upload your thesis</h2>
 </section>
+<section id="form-content">
+<div class="section-wrapper">
+<code class="xml plain">
+<?php echo do_shortcode('[gravityform id=2 title=false description=false ajax=true tabindex=49]'); ?>
+    </code>
+</div>
+</section>
+
 
 <?php get_footer(); ?>
