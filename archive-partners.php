@@ -8,7 +8,7 @@ get_header();
         <div class="blue-bg">
             <div class="section-wrapper">
                 <h2>
-                    Resilience comes from building strong partnerships.
+                    Resilience comes from building strong partnership.
                 </h2>
             </div>
         </div>
