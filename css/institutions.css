@@ -1,0 +1,314 @@
+#banner{
+	margin-top: 105px;
+    color: #fff;
+    padding-bottom: 90px;
+    position: relative;
+    overflow: hidden;
+}
+
+#banner > div{
+    z-index: 1;
+    position: relative;
+}
+
+#banner:before,
+#banner:after{
+    content: '';
+    border-radius: 50%;
+	height: 150px;
+    width: 150px;
+    border: 45px solid #d6ba28;
+    position: absolute;
+    bottom: 25px;
+    left: 10%;
+}
+
+#banner:after{
+    width: 250px;
+    height: 250px;
+    bottom: -100px;
+    border-width: 80px;
+    right: 10%;
+    left: auto;
+}
+
+#banner .section-wrapper > h2{
+	text-align: center;
+	font-size: 4.2em;
+	line-height: 1.1em;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	padding: 2.3em 2em;
+    padding-top: 2em;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#banner .section-wrapper > h2 small{
+	display: block;
+	font-family: "Dosis", sans-serif;
+	font-weight: normal;
+	font-size: 0.6em;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+	color: #000;
+}
+
+#banner .section-wrapper > h2 a{
+	padding-bottom: 0.2em;
+	border-bottom: 5px solid #01a1dd;
+}
+
+#banner .section-wrapper > .image{
+	height: 600px;
+}
+
+#banner .image img{
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#banner .image{
+	background: #ddd;
+}
+
+#featured{
+    padding-top: 5em;
+    padding-bottom: 4em;
+}
+
+#ourPartners .section-wrapper > .layout{
+	margin: 0 -1em;
+}
+
+.featured-item{
+	font-size: 1.35em;
+	line-height: 1.4em;
+	text-align: center;
+    letter-spacing: 0.04em;
+    padding: 0 1em;
+    margin-bottom: 1em;
+    width: 25%;
+}
+
+.featured-item > div{
+    min-height: 100%;
+    padding: 0.8em 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-item .image{
+	position: relative;
+	margin-bottom: 0.8em;
+}
+
+.featured-item .image img{
+	height: 100px;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+#quotes{
+	padding: 5em 0;
+}
+
+#quotes:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.1);
+	background-image: url(../img/deco-pattern.png);
+	background-size: 500px;
+	filter: blur(1px);
+}
+
+#quotesContainer{
+	position: relative;
+	background-size: cover;
+	background-color: #e9e1b2;
+}
+
+#quotesScrim{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#quotesContainer > div:not(#quotesScrim){
+	width: 55%;
+	padding: 3.6em;
+}
+
+#quotesContainer h3{
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	position: relative;
+	overflow: visible;
+}
+
+#quotesContainer h3 svg{
+	position: absolute;
+	top: -25px;
+	left: -37px;
+	width: 68px;
+	height: 68px;
+	opacity: 0.2;
+	transform: rotate(8deg);
+}
+
+#quotesContainer p{
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
+
+#largeQuote{
+	position: relative;
+	z-index: 1;
+	background: rgba(135, 116, 15, 0.88);
+}
+
+#largeQuote h3{
+	font-size: 2.6em;
+	line-height: 1.2em;
+	margin-bottom: 0.5em;
+	color: #fff;
+}
+
+#smallQuote{
+	position: relative;
+	z-index: 1;
+	background-color: rgba(49, 42, 6, 0.88);
+}
+
+#smallQuote h3{
+	font-size: 1.75em;
+	line-height: 1.5em;
+	margin-bottom: 0.8em;
+	color: #ddd;
+}
+
+#smallQuote p{
+	color: #ccc;
+}
+
+#aboutResilience{
+	position: relative;
+	background: #ddd;
+}
+
+#aboutResilience .section-wrapper > div{
+	padding: 6.5em 5em;
+}
+
+#aboutResilience .section-wrapper > div > h2{
+	font-family: "Dosis", sans-serif;
+	font-size: 2.5em;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #000;
+	display: block;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+#moreAbout > div{
+	flex-shrink: 0;
+	width: 40%;
+	padding: 1em;
+}
+
+@media screen and (max-width: 520px){
+    #banner{
+        margin-top: 2.7em;
+        padding-bottom: 0;
+	}
+
+	#banner:before,
+	#banner:after{
+		display: none;
+	}
+	
+	#banner .section-wrapper > h2{
+		font-size: 2em;
+		line-height: 1.5em;
+		padding: 2em 0.5em;
+	}
+	
+	#aboutResilience:before{
+		display: none;
+	}
+
+	#aboutResilience .section-wrapper > div{
+		padding: 4em 0;
+	}
+
+	#aboutResilience .section-wrapper > div > h2{
+		text-transform: none;
+	}
+
+	#aboutResilience .section-wrapper > div > p:first-of-type{
+		text-align: left;
+		font-size: 1.8em;
+		font-weight: normal;
+	}
+
+	#aboutResilience .section-wrapper > div > p:last-of-type{
+		font-size: 1.35em;
+		line-height: 1.8em;
+		color: #173a47;
+	}
+
+	#moreAbout > div{
+		width: 100%;
+		padding: 0;
+		margin-bottom: 1.5em;
+    }
+
+    #featured{
+        padding-top: 3em;
+        padding-bottom: 1em;
+    }
+
+    #featured .section-wrapper > .layout{
+        justify-content: space-between;
+    } 
+    
+    .featured-item {
+		width: 40%;
+	}
+    
+    .featured-item .image img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+	}
+
+	#quotes, #quotes .section-wrapper{
+		padding: 0;
+	}
+
+	#quotesContainer > div:not(#quotesScrim){
+		width: 100%;
+		padding: 3em 2em;
+	}
+
+	#largeQuote h3{
+		font-size: 2em;
+		line-height: 1.2em;
+		margin-bottom: 0.5em;
+	}
+	
+	#smallQuote h3{
+		font-size: 1.5em;
+		line-height: 1.5em;
+		margin-bottom: 0.8em;
+	}
+}

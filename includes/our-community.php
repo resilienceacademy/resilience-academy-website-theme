@@ -1,9 +1,8 @@
-
-
-<section id="ourCommunity">
+<section id="aboutResilience">
     <div class="section-wrapper">
         <div>
-            <h2>OUR COMMUNITY</h2>
+            <h2>Our Community</h2>
+
             <div id="moreAbout" class="layout center-justified wrap">
                 <div>
                     <div class="decorated-inset-box blue-bg">
@@ -22,7 +21,7 @@
                         <div>
                             <h3>Institutions</h3>
                             <p>Meet our members</p>
-                            <a href="#" class="button">
+                            <a href="<?php echo get_home_url(); ?>/institutions" class="button">
                                 Learn More
                             </a>
                         </div>
@@ -34,7 +33,7 @@
                         <div>
                             <h3>Partners</h3>
                             <p>Meet our partners</p>
-                            <a href="#" class="button">
+                            <a href="<?php echo get_home_url(); ?>/partners" class="button">
                                 Learn More
                             </a>
                         </div>
