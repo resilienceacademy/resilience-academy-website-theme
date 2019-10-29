@@ -365,6 +365,10 @@ nav > ul > li > ul a:hover{
 	background: #333;
 	color: #fff;
 }
+#facebook{
+	margin-left: 15px;
+
+}
 
 #connect li svg{
 	width: 26px;
