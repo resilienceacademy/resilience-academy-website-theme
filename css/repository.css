@@ -3,7 +3,7 @@
     background-image: url(../img/Background-Blue.png);
 }
 
-#repository .articles-content {
+#repository .section-wrapper {
     background-color: #ffffff;
     padding: 50px;
 }
@@ -64,7 +64,7 @@
     #repository h2 {
         font-size: 2em;
     } 
-    #repository .articles-content {
+    #repository .section-wrapper{
         width: 90%;
         margin-left: 20px;
     }

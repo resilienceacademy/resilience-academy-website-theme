@@ -4,7 +4,7 @@ get_header();
 ?>
 <section id="repository">
     <h2>Research Repository</h2>
-    <div class="articles-content">
+    <div class="section-wrapper">
     <?php echo do_shortcode(get_option('articles')); ?>
     </div>
 </section>
