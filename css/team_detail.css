@@ -1,0 +1,242 @@
+#banner{
+	margin-top: 105px;
+	padding: 3em 0;
+}
+
+#banner > .section-wrapper{
+	max-width: 1000px;
+}
+
+#banner img{
+    background: #eee;
+	height: 450px;
+	width: 100%;
+	max-width: 600px;
+	object-fit: cover;
+	display: block;
+	margin-bottom: 2em;
+}
+
+#banner h3,
+#banner h5{
+	font-family: "Lato", sans-serif;
+}
+
+#banner h3{
+	font-size: 2em;
+	margin-bottom: 0.4em;
+}
+
+#banner h5{
+	font-size: 1.3em;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	font-weight: 500;
+	margin-bottom: 1.1em;
+}
+
+#banner p{
+	letter-spacing: 0.01em;
+	font-size: 1.2em;
+	line-height: 1.8em;
+}
+
+#banner p:not(:last-of-type){
+	margin-bottom: 1.5em;
+}
+
+.team-member-links{
+	margin-bottom: 1.3em;
+}
+
+.team-member-links a{
+	width: 35px;
+	height: 35px;
+	background: #e8e8e8;
+	border-radius: 50%;
+	margin-right: 0.7em;
+}
+
+.team-member-links a:hover{
+	background: #ddd;
+}
+
+.team-member-links svg{
+	width: 18px;
+	height: 18px;
+	fill: #555;
+	color: #555;
+	stroke: none;
+}
+
+.team-member-links a:hover svg{
+	fill: #444;
+	color: #444;
+}
+
+#twitterLink svg{
+	width: 14px;
+	height: 14px;
+}
+
+#whyResilience{
+	padding: 6em 0;
+}
+
+#whyResilience .text{
+	width: 45%;
+	padding-left: 70px;
+	margin-right: 5em;
+	position: relative;
+	flex-shrink: 0;
+}
+
+#whyResilience .text:before{
+	content: '';
+	position: absolute;
+	left: -2%;
+	top: 0;
+	width: 60px;
+	height: 80px;
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2301a1dd%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22feather%20feather-chevron-right%22%3E%3Cpolyline%20points%3D%229%2018%2015%2012%209%206%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-size: 80px;
+}
+
+#whyResilience .text p{
+	font-size: 1.9em;
+	line-height: 1.7em;
+	margin-bottom: 0.6em;
+}
+
+#whyResilience .image{
+	flex: 1;
+	height: 560px;
+}
+
+#aboutResilience{
+	position: relative;
+	background: #ddd;
+}
+
+#aboutResilience .section-wrapper > div{
+	padding: 6.5em 5em;
+}
+
+#aboutResilience .section-wrapper > div > h2{
+	font-family: "Dosis", sans-serif;
+	font-size: 2.5em;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #000;
+	display: block;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+#moreAbout > div{
+	flex-shrink: 0;
+	width: 33.333%;
+	padding: 1em;
+}
+
+@media screen and (max-width: 520px){
+    #banner{
+		margin-top: 2.7em;
+	}
+
+	#banner:after{
+		display: none;
+	}
+
+	#userDetails{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#banner img{
+		background: #eee;
+		height: 130px;
+		width: 130px;
+		border-radius: 50%;
+		margin-right: 1.5em;
+		margin-bottom: 0;
+		flex-shrink: 0;
+	}
+
+	#userDetails > div{
+		margin-top: 1em;
+		margin-bottom: 1.3em;
+	}
+
+	#banner h3{
+		font-size: 1.5em;
+		margin-bottom: 0.4em;
+	}
+	
+	#banner h5{
+		font-size: 0.95em;
+		letter-spacing: 0.06em;
+		color: #333;
+	}
+
+	#banner p{
+		letter-spacing: 0.01em;
+		font-size: 1em;
+		/* line-height: 1.8em; */
+	}
+	
+	#banner p:not(:last-of-type){
+		margin-bottom: 0.8em;
+	}
+	
+	.team-member-links{
+		margin-bottom: 0.9em;
+	}
+
+	#aboutResilience:before{
+		display: none;
+	}
+
+	#aboutResilience .section-wrapper > div{
+		padding: 4em 0;
+	}
+
+	#aboutResilience .section-wrapper > div > h2{
+		text-transform: none;
+	}
+
+	#aboutResilience .section-wrapper > div > p:first-of-type{
+		text-align: left;
+		font-size: 1.8em;
+		font-weight: normal;
+	}
+
+	#aboutResilience .section-wrapper > div > p:last-of-type{
+		font-size: 1.35em;
+		line-height: 1.8em;
+		color: #173a47;
+	}
+
+	#moreAbout > div{
+		width: 100%;
+		padding: 0;
+		margin-bottom: 1.5em;
+	}
+
+	.decorated-inset-box{
+		padding: 1em;
+	}
+	
+	.decorated-inset-box div h3{
+		font-size: 1.8em;
+	}
+
+	.decorated-inset-box div p {
+		font-size: 1.2em;
+	}
+
+	.decorated-inset-box .button {
+		font-size: 1em;
+	}
+}

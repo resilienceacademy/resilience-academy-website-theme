@@ -1,74 +1,69 @@
 <?php
-wp_enqueue_style('team', get_template_directory_uri() . '/css/team.css');
+wp_enqueue_style('partners', get_template_directory_uri() . '/css/partners.css');
 get_header();
 
 ?>
 
-    <section id="banner">
-        <div class="section-wrapper">
-            <h2>
-                Resilience begins with a team of dedicated and brilliant problem solvers.
-            </h2>
+    <section id="banner" class="yellow-bg">
+        <div class="blue-bg">
+            <div class="section-wrapper">
+                <h2>
+                    Resilience comes from building strong partnership.
+                </h2>
+            </div>
         </div>
     </section>
 
-    <section id="team">
+    <section id="featured">
         <div class="section-wrapper">
             <div class="layout wrap">
                 <?php
                 $args = array(
-                    'post_type' => 'team',
-                    'orderby' => 'menu_order',
-                    'posts_per_page' => 1,
-                    'order' => 'ASC',
-                    'meta_query'	=> array(
-                        array(
-                            'key'	  	=> 'position',
-                            'value'	  	=> 'Lead',
-                            'compare' 	=> '=',
-                        ),
-                    ),
-                );
-                $custom_query = new WP_Query($args);
-                while ($custom_query->have_posts()) : $custom_query->the_post();
-                    get_template_part('partials/content-team-featured', get_post_format());
-                endwhile; ?>
-
-                <?php
-                $args = array(
-                    'post_type' => 'team',
+                    'post_type' => 'partners',
                     'orderby' => 'menu_order',
                     'order' => 'ASC'
                 );
                 $custom_query = new WP_Query($args);
                 while ($custom_query->have_posts()) : $custom_query->the_post();
-                    get_template_part('partials/content-team', get_post_format());
+                    get_template_part('partials/content-partner', get_post_format());
                 endwhile; ?>
-
-
             </div>
         </div>
     </section>
 
-    <section id="methods">
+    <section id="methods" class="yellow-bg">
         <div class="section-wrapper position-relative">
             <div class="overflow-hidden" style="background: #d2d2d2;">
                 <div id="methodsScroller" class="layout center">
-                    <div class="method-item layout">
-                        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/about-team.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-                    </div>
-                    <div class="method-item layout">
-                        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/about-team.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-                    </div>
-                    <div class="method-item layout">
-                        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/about-team.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-                    </div>
-                    <div class="method-item layout">
-                        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/about-team.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-                    </div>
-                    <div class="method-item layout">
-                        <img src="https://resilienceacademy.ac.tz/wp-content/uploads/2019/06/about-team.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
-                    </div>
+                    <?php
+                    $featured = [
+                        [
+                            "bg" => "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+                            "image" => "https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/University_of_Turku.svg/1200px-University_of_Turku.svg.png",
+                            "text" => "A Multidisciplinary, International, Research, Uninversity",
+                            "link" => "https://www.utu.fi/en"
+                        ],
+                    ];
+
+                    for ($i=0; $i < count($featured); $i++) {
+                        $item = $featured[$i];
+                        echo '
+                            <div class="method-item" style="background-image: url('.$item['bg'].')">
+                                <div class="image">
+                                    <img src="'.$item['image'].'" alt="">
+                                </div>
+                                <div class="text layout vertical center-center">
+                                    <h3>
+                                        '.$item['text'].'
+                                    </h3>
+                                    <a class="button" href="'.$item['link'].'">
+                                        LEARN MORE
+                                    </a>
+                                </div>
+                            </div>
+                        ';
+                    }
+                    ?>
                 </div>
             </div>
 
@@ -95,7 +90,7 @@ get_header();
                             <div>
                                 <h3>Institutions</h3>
                                 <p>Meet our members</p>
-                                <a href="#" class="button">
+                                <a href="<?php echo get_home_url(); ?>/institutions" class="button">
                                     Learn More
                                 </a>
                             </div>
@@ -105,9 +100,9 @@ get_header();
                     <div>
                         <div class="decorated-inset-box yellow-bg">
                             <div>
-                                <h3>Partners</h3>
-                                <p>Meet our partners</p>
-                                <a href="#" class="button">
+                                <h3>Team</h3>
+                                <p>Get to know us</p>
+                                <a href="<?php echo get_home_url(); ?>/team" class="button">
                                     Learn More
                                 </a>
                             </div>
@@ -118,8 +113,7 @@ get_header();
         </div>
     </section>
 
-<?php include('includes/contact-form.php'); ?>
-<?php include('includes/subscribe.php'); ?>
+
 
     <script>
         var methodsScroller = document.querySelector("#methodsScroller");
@@ -146,4 +140,5 @@ get_header();
             doMethodsMovement(index);
         }
     </script>
+
 <?php get_footer(); ?>

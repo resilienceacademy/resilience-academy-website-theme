@@ -201,6 +201,53 @@ function create_team_post()
 
 add_action('init', 'create_team_post');
 
+// Partners Post Type
+function create_partners_post()
+{
+    register_post_type('partners',
+        array(
+            'labels' => array(
+                'name' => __('Partners'),
+                'singular_name' => __('Partner'),
+            ),
+            'public' => true,
+            'menu_icon' => 'dashicons-buddicons-buddypress-logo',
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail',
+                'custom-fields'
+            )
+        ));
+}
+
+add_action('init', 'create_partners_post');
+
+
+// Institutions Post Type
+function create_institutions_post()
+{
+    register_post_type('institutions',
+        array(
+            'labels' => array(
+                'name' => __('Institutions'),
+                'singular_name' => __('Institution'),
+            ),
+            'public' => true,
+            'menu_icon' => 'dashicons-welcome-learn-more',
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail',
+                'custom-fields'
+            )
+        ));
+}
+
+add_action('init', 'create_institutions_post');
+
 
 function prefix_send_email_to_admin() {
     /**
