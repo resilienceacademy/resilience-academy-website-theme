@@ -21,7 +21,8 @@ get_header();
                 $args = array(
                     'post_type' => 'partners',
                     'orderby' => 'menu_order',
-                    'order' => 'ASC'
+                    'order' => 'ASC',
+                    'posts_per_page' => 100,
                 );
                 $custom_query = new WP_Query($args);
                 while ($custom_query->have_posts()) : $custom_query->the_post();

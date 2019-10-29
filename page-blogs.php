@@ -17,14 +17,19 @@ get_header();
     <div class="section-wrapper">
         <?php
         $args = array(
-            'posts_per_page' => 100,
+            'posts_per_page' => 3,
         );
         $custom_query = new WP_Query($args);
         if ( $custom_query->have_posts() ) : while ($custom_query->have_posts()) : $custom_query->the_post();
             get_template_part( 'partials/content-blog-card-large', get_post_format() );
-        endwhile; endif;
+        endwhile; 
+        pagination_nav();
+    endif;
+    
         ?>
+        
     </div>
+    
 </section>
 
 <?php get_footer(); ?>
