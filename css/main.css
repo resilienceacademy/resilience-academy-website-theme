@@ -447,6 +447,13 @@ footer .section-wrapper{
 	.for-mob{
 		display: none;
 	}
+	hr{
+	width: 35%;
+    border: 2px solid #04a2db;
+	margin-left: 35%;
+	margin-bottom: 30px;
+
+	}
 }
 
 @media screen and (max-width: 520px){
@@ -552,6 +559,10 @@ footer .section-wrapper{
 		font-size: 1.3em;
 		line-height: 1.6em;
 	}
+	hr{
+		border: 2px solid #04a2db;
+		margin-bottom: 30px;	
+		}
 }
 
 

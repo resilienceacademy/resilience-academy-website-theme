@@ -15,18 +15,12 @@ get_header();
     <section id="team">
         <div class="section-wrapper">
             <div class="layout wrap">
-               <div class="group1">
                <?php
                 $args = array(
                     'post_type' => 'team',
                     'orderby' => 'menu_order',
                     'order' => 'ASC',
-                    'posts_per_page' => 10,
-                    'tax_query' => array(
-                        array(
-                            'position' => 'coordinator',
-                        )
-                    )
+                    'posts_per_page' => 10
                 );
                 $custom_query = new WP_Query($args);
                 while ($custom_query->have_posts()) : $custom_query->the_post();
@@ -34,18 +28,13 @@ get_header();
                 endwhile; ?>
                </div>
                <hr/>
-               <div class="group2">
+               <div class="layout wrap">
                <?php
                 $args = array(
                     'post_type' => 'team',
                     'orderby' => 'menu_order',
                     'order' => 'ASC',
                     'posts_per_page' => 1,
-                    'tax_query' => array(
-                        array(
-                            'position' => 'wb_staff',
-                        )
-                    )
                 );
                 $custom_query = new WP_Query($args);
                 while ($custom_query->have_posts()) : $custom_query->the_post();
@@ -53,24 +42,18 @@ get_header();
                 endwhile; ?>
                </div>
                <hr/>
-               <div class="group3">
+               <div class="layout wrap">
                <?php
                 $args = array(
                     'post_type' => 'team',
                     'orderby' => 'menu_order',
                     'order' => 'ASC',
                     'posts_per_page' => 10,
-                    'tax_query' => array(
-                        array(
-                            'position' => 'Member',
-                        )
-                    )
                 );
                 $custom_query = new WP_Query($args);
                 while ($custom_query->have_posts()) : $custom_query->the_post();
                     get_template_part('partials/content-team', get_post_format());
                 endwhile; ?>
-               </div>
             </div>
         </div>
     </section>
