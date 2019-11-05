@@ -37,34 +37,15 @@ get_header();
             <div class="overflow-hidden" style="background: #d2d2d2;">
                 <div id="methodsScroller" class="layout center">
                     <?php
-                    $featured = [
-                        [
-                            "bg" => "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-                            "image" => "https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/University_of_Turku.svg/1200px-University_of_Turku.svg.png",
-                            "text" => "A Multidisciplinary, International, Research, Uninversity",
-                            "link" => "https://www.utu.fi/en"
-                        ],
-                    ];
-
-                    for ($i=0; $i < count($featured); $i++) {
-                        $item = $featured[$i];
-                        echo '
-                            <div class="method-item" style="background-image: url('.$item['bg'].')">
-                                <div class="image">
-                                    <img src="'.$item['image'].'" alt="">
-                                </div>
-                                <div class="text layout vertical center-center">
-                                    <h3>
-                                        '.$item['text'].'
-                                    </h3>
-                                    <a class="button" href="'.$item['link'].'">
-                                        LEARN MORE
-                                    </a>
-                                </div>
-                            </div>
-                        ';
-                    }
-                    ?>
+                    $args = array(
+                        'post_type' => 'announcements',
+                        'orderby' => 'menu_order',
+                        'order' => 'ASC'
+                    );
+                    $custom_query = new WP_Query($args);
+                    while ($custom_query->have_posts()) : $custom_query->the_post();
+                        get_template_part('partials/content-partners-slider', get_post_format());
+                    endwhile; ?>
                 </div>
             </div>
 
