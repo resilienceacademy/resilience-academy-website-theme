@@ -20,7 +20,14 @@ get_header();
                     'post_type' => 'team',
                     'orderby' => 'menu_order',
                     'order' => 'ASC',
-                    'posts_per_page' => 10
+                    'meta_query'	=> array(
+                        array(
+                            'key'	  	=> 'position',
+                            'value'	  	=> 'Coordinator',
+                            'compare' 	=> '=',
+                        ),
+                    ),
+                    'posts_per_page' => 100
                 );
                 $custom_query = new WP_Query($args);
                 while ($custom_query->have_posts()) : $custom_query->the_post();
@@ -34,7 +41,14 @@ get_header();
                     'post_type' => 'team',
                     'orderby' => 'menu_order',
                     'order' => 'ASC',
-                    'posts_per_page' => 1,
+                    'meta_query'	=> array(
+                        array(
+                            'key'	  	=> 'position',
+                            'value'	  	=> 'WorldBank',
+                            'compare' 	=> '=',
+                        ),
+                    ),
+                    'posts_per_page' => 100,
                 );
                 $custom_query = new WP_Query($args);
                 while ($custom_query->have_posts()) : $custom_query->the_post();
@@ -48,7 +62,14 @@ get_header();
                     'post_type' => 'team',
                     'orderby' => 'menu_order',
                     'order' => 'ASC',
-                    'posts_per_page' => 10,
+                    'meta_query'	=> array(
+                        array(
+                            'key'	  	=> 'position',
+                            'value'	  	=> 'Member',
+                            'compare' 	=> '=',
+                        ),
+                    ),
+                    'posts_per_page' => 100,
                 );
                 $custom_query = new WP_Query($args);
                 while ($custom_query->have_posts()) : $custom_query->the_post();
