@@ -248,6 +248,29 @@ function create_institutions_post()
 
 add_action('init', 'create_institutions_post');
 
+// Annotations Post Type
+function create_annotations_post()
+{
+    register_post_type('annotations',
+        array(
+            'labels' => array(
+                'name' => __('Annotations'),
+                'singular_name' => __('Annotation'),
+            ),
+            'public' => true,
+            'menu_icon' => 'dashicons-welcome-learn-more',
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+                'editor',
+                'thumbnail',
+                'custom-fields'
+            )
+        ));
+}
+
+add_action('init', 'create_annotations_post');
+
 
 function prefix_send_email_to_admin() {
     /**
