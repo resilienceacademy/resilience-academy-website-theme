@@ -1,6 +1,6 @@
 
 <section id="contactUsSection">
-    <div class="section-wrapper">
+    <div class="section-wrapper" id="contact">
         <div class="layout start justified">
             <div id="contactUs">
                 <h3>Have a question?</h3>

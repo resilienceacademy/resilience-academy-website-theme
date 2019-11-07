@@ -5,7 +5,7 @@ get_header();
 ?>
 
 <section id="banner">
-    <div class="section-wrapper">
+    <div class="section-wrapper" id="our-focus">
         <h2>
             <small>OUR FOCUS</small>
             Why <a href="#">Resilience?</a>
@@ -42,7 +42,7 @@ get_header();
 </section>
 
 <section id="aboutResilience">
-    <div class="section-wrapper">
+    <div class="section-wrapper" >
         <div>
             <h2>The Resilience Academy</h2>
             <div id="moreAbout" class="layout center-justified wrap">
@@ -162,7 +162,7 @@ get_header();
 
 
     <section id="ourCommunity">
-        <div class="section-wrapper">
+        <div class="section-wrapper" id="our-community">
             <div>
                 <h2>OUR COMMUNITY</h2>
                 <div id="moreAbout" class="layout center-justified wrap">
